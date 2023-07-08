@@ -4,8 +4,8 @@ mainSections = ["post"]
 rssFullContent = true
 
 [footer]
-since = 2020
-customText = ""
+since = 2023
+customText = "RyanKert"
 
 [dateFormat]
 published = "Jan 02, 2006"
