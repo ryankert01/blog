@@ -3,6 +3,7 @@ title: "Intro of Data Science"
 description:
 date: 2024-03-01T14:19:56+08:00
 image:
+keywords: ["Data Science", "Data Mining"]
 comments: true
 ---
 

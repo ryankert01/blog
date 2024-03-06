@@ -1,5 +1,11 @@
 ## Hugo Theme Stack Starter Template 
 
+### add a post
+
+```bash
+hugo new posts/my-first-post/index.md
+```
+
 
 This is a quick start template for [Hugo theme Stack](https://github.com/CaiJimmy/hugo-theme-stack). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.
 
