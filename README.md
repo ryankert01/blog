@@ -3,7 +3,7 @@
 ### add a post
 
 ```bash
-hugo new posts/my-first-post/index.md
+hugo new content/post/my-first-post/index.md
 ```
 
 
