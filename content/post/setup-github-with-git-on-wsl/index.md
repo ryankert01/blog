@@ -42,25 +42,12 @@ git config --global user.name "Your Name"
 ![example setup](<Screenshot 2024-03-13 at 12.46.10 PM.png>)
 
 2. click "Generate token" to generate token, copy it
-3. clone, commit and try to push a github repo
+3. update `~/.git-credentials`, add a `:<personal access token>@` in to the file. Can be modify by `nano ~/.git-credientials` or simply `code ~/.git-credentials` (vscode).
+3. test: clone, commit and try to push a github repo
 
 ```bash
 git clone <repo url>
 git commit -am "commit name"
 git push
 ```
-4. It will let you enter your Github username, then your password. In the password section, enter `personal access token` you just generated.
-
-```
-Username for 'https://github.com': <username>
-Password for 'https://<username>@github.com': <github personal access token>..
-Enumerating objects: 9, done.
-Counting objects: 100% (9/9), done.
-Delta compression using up to 20 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (6/6), 911 bytes | 101.00 KiB/s, done.
-Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
-To https://github.com/<username>/blog.git
-   5c47249..cf5de6e  master -> master
-```
+4. output example:
