@@ -1,5 +1,5 @@
 ---
-title: "Setup Github With Git on Windows 11 and WSL 2 (also works in Linux/Mac)"
+title: "Setup Github With Git on Windows 11 and WSL 2 (also works in Linux)"
 description: 
 date: 2024-03-13T12:01:11+08:00
 image: 
