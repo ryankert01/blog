@@ -7,7 +7,7 @@ image:
 
 ## Intro
 
-One of the easiest way to connect your Github account with your git installed on Windows is through [Github Desktop](https://desktop.github.com/). Also, this method has a great merit: it's too easy to encounter a bug! lol!
+One of the easiest way to connect your Github account with your git installed on Windows is through [Github Desktop](https://desktop.github.com/). But, we can't use that on wsl, so we use PAT(personal access token) to resolve this issue!
 
 ## Steps to setup on Windows 11
 
@@ -35,7 +35,6 @@ git config --global user.name "Your Name"
 ## Setup Github credentials (Personal access token)
 
 1. generate personal access token [here](https://github.com/settings/tokens).
-
     - expiration set to "No expiration"
     - select all access options
 
@@ -43,10 +42,12 @@ git config --global user.name "Your Name"
 
 2. click "Generate token" to generate token, copy it
 3. update `~/.git-credentials`, add a `:<personal access token>@` in to the file. Can be modify by `nano ~/.git-credientials` or simply `code ~/.git-credentials` (vscode).
-3. test: clone, commit and try to push a github repo
+4. 
+5. test: clone, commit and try to push a github repo
 
 ```bash
 git clone <repo url>
+git add *
 git commit -am "commit name"
 git push
 ```
