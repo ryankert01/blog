@@ -51,3 +51,19 @@ git commit -am "commit name"
 git push
 ```
 4. output example:
+```
+$ git add *
+$ git commit -am "init"
+[master 563c3a8] init
+ 1 file changed, 3 insertions(+), 16 deletions(-)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 608 bytes | 101.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/ryankert01/blog.git
+   af6a1b1..563c3a8  master -> master
+```
