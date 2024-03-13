@@ -42,7 +42,10 @@ git config --global user.name "Your Name"
 
 2. click "Generate token" to generate token, copy it
 3. update `~/.git-credentials`, add a `:<personal access token>@` in to the file. Can be modify by `nano ~/.git-credientials` or simply `code ~/.git-credentials` (vscode).
-4. 
+4. store the credentials with
+```bash
+git config --global credential.helper store
+```
 5. test: clone, commit and try to push a github repo
 
 ```bash
