@@ -53,7 +53,7 @@ git push
 
 ```
 Username for 'https://github.com': <username>
-Password for 'https://<username>@github.com': <github personal access token>
+Password for 'https://<username>@github.com': <github personal access token>..
 Enumerating objects: 9, done.
 Counting objects: 100% (9/9), done.
 Delta compression using up to 20 threads
