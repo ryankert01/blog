@@ -1,9 +1,8 @@
 ---
 title: "Assembly Language and Computer Organization"
-description: 
+description: Chapter 1 of Computer Organization and Design (risc-v edition)
 date: 2024-03-06T08:53:38+08:00
-image: 
-math: 
+image: "cover.png"
 keywords: ["Assembly Language", "Computer Organization"]
 ---
 

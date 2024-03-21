@@ -1,8 +1,8 @@
 ---
 title: "Setup Github With Git on Windows 11 and WSL 2 (also works in Linux)"
-description: 
+description: setup github account with git, in Ubuntu, WSL 2 and Windows 11
 date: 2024-03-13T12:01:11+08:00
-image: 
+image: image.png
 ---
 
 ## Intro

@@ -2,7 +2,7 @@
 title: "Data Science Python"
 description: 
 date: 2024-03-08T15:35:13+08:00
-image: 
+image: image.png
 math: 
 license: 
 hidden: false
