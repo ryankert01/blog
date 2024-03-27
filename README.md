@@ -1,9 +1,21 @@
 ## Hugo Theme Stack Starter Template 
 
-### add a post
+### add a new post
 
 ```bash
-hugo new content/post/my-first-post/index.md
+./post.sh -c first-post
+```
+
+### delete a post
+
+```bash
+./post.sh -d first-post
+```
+
+### Dev Mode
+
+```bash
+hugo server
 ```
 
 
