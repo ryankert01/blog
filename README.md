@@ -18,6 +18,20 @@
 hugo server
 ```
 
+### Link to post in content/post
+
+eg. in `content/post/RISC-V:-tips-and-tricks/index.md`:
+
+```markdown
+[RISC-V: Use Stack to Store Return Address](/p/risc-v-use-stack-to-store-return-address/)
+
+[RISC-V: Use Stack to Store Return Address]({{< ref "/post/RISC-V:-use-stack-to-store-return-address/" >}})
+
+[RISC-V: Use Stack to Store Return Address]({{< relref "RISC-V:-use-stack-to-store-return-address" >}})
+```
+
+
+
 
 This is a quick start template for [Hugo theme Stack](https://github.com/CaiJimmy/hugo-theme-stack). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.
 
