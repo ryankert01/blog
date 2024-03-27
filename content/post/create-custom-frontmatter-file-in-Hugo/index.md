@@ -6,9 +6,10 @@ image:
 hidden: false
 comments: true
 categories:
-  - Hugo
+    - Hugo
 tags:  
-  - Frontmatter
+    - Hugo
+    - Frontmatter
 ---
 
 ## Intro
