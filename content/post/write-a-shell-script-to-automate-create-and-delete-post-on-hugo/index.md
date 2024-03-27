@@ -6,7 +6,8 @@ image:
 hidden: false
 comments: true
 categories:
-  - Hugo, Shell Script
+  - Hugo
+  - Shell Script
 tags:  
   - shell script
 ---
