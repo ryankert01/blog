@@ -6,7 +6,7 @@ image:
 hidden: false
 comments: true
 categories:
-  - Example Category
+    - Example Category
 tags:  
-  - Example Tag
+    - Example Tag
 ---
