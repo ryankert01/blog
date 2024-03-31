@@ -1,6 +1,6 @@
 ---
-title: "Setup Github With Git on Windows 11 and WSL 2 (also works in Linux)"
-description: setup github account with git, in Ubuntu, WSL 2 and Windows 11
+title: "Setup Github With Git using Github CLI"
+description: setup github account with git, in Ubuntu, WSL 2 and Windows 11, using Github CLI
 date: 2024-03-13T12:01:11+08:00
 image: image.png
 ---
@@ -32,20 +32,16 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-## Setup Github credentials (Personal access token)
+## install Github CLI
 
-1. generate personal access token [here](https://github.com/settings/tokens).
-    - expiration set to "No expiration"
-    - select all access options
+1. download and install Github CLI following [this tutorial](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git#github-cli). In Ubuntu, you can install it with [apt](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-raspberry-pi-os-apt).
 
-![example setup](<Screenshot 2024-03-13 at 12.46.10 PM.png>)
+2. login in the Github website
 
-2. click "Generate token" to generate token, copy it
-3. update `~/.git-credentials`, add a `:<personal access token>@` in to the file. Can be modify by `nano ~/.git-credientials` or simply `code ~/.git-credentials` (vscode).
-4. store the credentials with
 ```bash
-git config --global credential.helper store
+gh auth login
 ```
+
 5. test: clone, commit and try to push a github repo
 
 ```bash
