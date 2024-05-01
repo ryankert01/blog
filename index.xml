@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ryan Kert</title><link>https://light.ryankert.cc/</link><description>Recent content on Ryan Kert</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Mar 2024 20:45:51 +0800</lastBuildDate><atom:link href="https://light.ryankert.cc/index.xml" rel="self" type="application/rss+xml"/><item><title>RISC V: Tips and Tricks</title><link>https://light.ryankert.cc/p/risc-v-tips-and-tricks/</link><pubDate>Wed, 27 Mar 2024 20:45:51 +0800</pubDate><guid>https://light.ryankert.cc/p/risc-v-tips-and-tricks/</guid><description>&lt;h2 id="basics">Basics&lt;/h2>
+&lt;h3 id="registers">Registers&lt;/h3>
+&lt;p>&lt;img src="https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM.png"
+width="1562"
+height="1022"
+srcset="https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM_hu7a455f2d0e1b424e2e450731cbd7ebc4_229926_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM_hu7a455f2d0e1b424e2e450731cbd7ebc4_229926_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="register conventions"
+class="gallery-image"
+data-flex-grow="152"
+data-flex-basis="366px"
+>&lt;/p>
+&lt;h3 id="pseudo-instructions">Pseudo Instructions&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>li&lt;/code> is used to load an immediate value into a register.&lt;/li>
+&lt;li>&lt;code>la&lt;/code> is used to load an address into a register. (also can load a label address)&lt;/li>
+&lt;li>&lt;code>mv&lt;/code> is used to move a value from one register to another. (inclusive of addresses)&lt;/li>
+&lt;li>&lt;code>ret&lt;/code> is used to return from a function using the &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;/ul>
+&lt;h3 id="print-the-prompt-and-read-an-integer">Print the prompt and read an integer&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Print the prompt
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">la&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">prompt&lt;/span> &lt;span class="c1"># Load address of the prompt into a0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="c1"># System call for printing string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">ecall&lt;/span> &lt;span class="c1"># Execute the call
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Read an integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span> &lt;span class="c1"># System call for reading an integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">ecall&lt;/span> &lt;span class="c1"># Execute the call, integer is now in a0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Store the integer in another register, e.g., t0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">mv&lt;/span> &lt;span class="no">t0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a0&lt;/span> &lt;span class="c1"># Move the integer from a0 to t0
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="branch-will-not-store-return-addressra">Branch will not store return address(ra)&lt;/h2>
+&lt;p>blt, bge, bltu, bgeu, etc. will not also set the &lt;code>ra&lt;/code> register. If you want to use the return address, you need to save it before the branch instruction. or use labels and &lt;code>jal&lt;/code> instruction.&lt;/p>
+&lt;p>eg. the following code is a function demostrates &lt;code>1&lt;/code> times &lt;code>a2&lt;/code> to &lt;code>a3 + 1&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">li&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1_loop:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">beq&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">times_a2_to_a3_plus_1_end&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">div&lt;/span> &lt;span class="no">t4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">t5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">bge&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">t4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raise_int_max_exceeded&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">mul&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">j&lt;/span> &lt;span class="no">times_a2_to_a3_plus_1_loop&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1_end:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">jr&lt;/span> &lt;span class="no">ra&lt;/span> &lt;span class="c1"># or `ret` alternatively
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">raise_int_max_exceeded:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">la&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">strRaisedIntMaxExceeded&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">ecall&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">jr&lt;/span> &lt;span class="no">t3&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>in line 6, where I invoke the &lt;code>raise_int_max_exceeded&lt;/code> function, I save the return address in &lt;code>t3&lt;/code> register. and in the &lt;code>raise_int_max_exceeded&lt;/code> function, I use &lt;code>jr t3&lt;/code> to return to the caller.&lt;/p>
+&lt;h2 id="difference-between-jal-jalr-j-jr">Difference between &lt;code>jal&lt;/code>, &lt;code>jalr&lt;/code>, &lt;code>j&lt;/code>, &lt;code>jr&lt;/code>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>jal&lt;/code> and &lt;code>jalr&lt;/code> is used to jump to a &lt;strong>label&lt;/strong> and save the return address in &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;li>&lt;code>jalr&lt;/code> is used to jump to a &lt;strong>register&lt;/strong> and save the return address in &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;li>&lt;code>j&lt;/code> is used to jump to a &lt;strong>label&lt;/strong>.&lt;/li>
+&lt;li>&lt;code>jr&lt;/code> is used to jump to a &lt;strong>register&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="use-stack-to-save-registers">Use stack to save registers&lt;/h2>
+&lt;p>eg.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="nl">validate_input:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">sw&lt;/span> &lt;span class="no">ra&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="no">sp&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert M &amp;gt; 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blez&lt;/span> &lt;span class="no">s1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_not_natural&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert N &amp;gt;= 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blt&lt;/span> &lt;span class="no">s2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">zero&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_less_than_zero&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert M &amp;gt;= N
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blt&lt;/span> &lt;span class="no">s1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">s2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_M_smaller_than_N&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">lw&lt;/span> &lt;span class="no">ra&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="no">sp&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">ret&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>for more info, visit this blog post: &lt;a class="link" href="" >RISC-V: Use Stack to Store Return Address&lt;/a>&lt;/p></description></item><item><title>RISC-V: Use Stack to Store Return Address</title><link>https://light.ryankert.cc/p/risc-v-use-stack-to-store-return-address/</link><pubDate>Wed, 27 Mar 2024 17:56:44 +0800</pubDate><guid>https://light.ryankert.cc/p/risc-v-use-stack-to-store-return-address/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>In RISC-V, the return address is stored in the &lt;code>ra&lt;/code> register. However, in some cases, you may want to use the stack to store the return address. This can be useful when you need to save the return address before calling a function and restore it after the function returns.&lt;/p>
+&lt;h2 id="best-practice">Best Practice&lt;/h2>
+&lt;p>To use the stack to store the return address in RISC-V, you can follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Push the return address onto the stack before calling the function.&lt;/li>
+&lt;li>Call the function.&lt;/li>
+&lt;li>Pop the return address from the stack after the function returns.&lt;/li>
+&lt;/ol>
+&lt;p>Here is an example of how to use the stack to store the return address in RISC-V:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">.section .text
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.global _start
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">_start:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Push the return address onto the stack
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addi sp, sp, -4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sw ra, 0(sp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Call the function
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> jal function
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Pop the return address from the stack
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> lw ra, 0(sp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addi sp, sp, 4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Exit the program
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> li a7, 93
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> li a0, 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ecall
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Function body
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ret
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Write a Shell Script to Automate Create and Delete Post on Hugo</title><link>https://light.ryankert.cc/p/write-a-shell-script-to-automate-create-and-delete-post-on-hugo/</link><pubDate>Wed, 27 Mar 2024 12:22:20 +0800</pubDate><guid>https://light.ryankert.cc/p/write-a-shell-script-to-automate-create-and-delete-post-on-hugo/</guid><description>&lt;h3 id="the-script-overview">The Script Overview&lt;/h3>
+&lt;p>The script provided allows for easy creation and deletion of blog posts with Hugo, a popular static site generator. By passing different flags and the title of your blog post as arguments, you can quickly manage your content without directly interacting with the file system or Hugo commands.&lt;/p>
+&lt;h3 id="usage">Usage&lt;/h3>
+&lt;p>To use this script, you would typically invoke it from the command line with the appropriate flags and arguments. For example, to create a post titled &amp;ldquo;My First Blog Post,&amp;rdquo; you would run:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./post.sh -c blog-post
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And to delete a post with the same title, you would use:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./post.sh -d blog-post
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="the-script">The Script&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="nb">test&lt;/span> &lt;span class="nv">$#&lt;/span> -gt 0&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h&lt;span class="p">|&lt;/span>--help&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Usage: &lt;/span>&lt;span class="nv">$package&lt;/span>&lt;span class="s2"> [options] application [arguments]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34; &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Options:&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-h, --help Show brief help&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-c, --create Create a new post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-d, --delete Delete an existing post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -c&lt;span class="p">|&lt;/span>--create&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> -n &lt;span class="nv">$1&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;creating post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hugo new content/post/&lt;span class="nv">$1&lt;/span>/index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2"> created.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;no post name specified&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -d&lt;span class="p">|&lt;/span>--delete&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> -n &lt;span class="nv">$1&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> rm -r content/post/&lt;span class="nv">$1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2"> deleted.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;no post directory specified&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> *&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="file-header-usrbinenv-bash">file header &lt;code>#!/usr/bin/env bash&lt;/code>&lt;/h3>
+&lt;p>The script starts with a shebang line &lt;code>#!/usr/bin/env bash&lt;/code> that specifies the interpreter to use for executing the script. This line is essential for running the script as an executable file. (happy running in zsh)&lt;/p>
+&lt;h3 id="understanding-while-test---gt-0">Understanding &lt;code>while test $# -gt 0;&lt;/code>&lt;/h3>
+&lt;p>The script begins with a &lt;code>while&lt;/code> loop that continues as long as there are arguments passed to the script (&lt;code>$#&lt;/code> is greater than 0). &lt;code>$#&lt;/code> is a special parameter in shell scripts that represents the number of arguments passed to the script. This loop allows the script to process multiple arguments sequentially, making it versatile and robust for different use cases.&lt;/p>
+&lt;h3 id="shift-and-argument-processing">&lt;code>shift&lt;/code> and Argument Processing&lt;/h3>
+&lt;p>Within the loop, we use the &lt;code>shift&lt;/code> command to shift the arguments passed to the script. This command moves the positional parameters (&lt;code>$1&lt;/code>, &lt;code>$2&lt;/code>, etc.) to the left, effectively removing the first argument. This is crucial for processing different flags and arguments in the script.&lt;/p>
+&lt;h3 id="how-case-works">How &lt;code>case&lt;/code> Works&lt;/h3>
+&lt;p>Inside the &lt;code>while&lt;/code> loop, we encounter a &lt;code>case&lt;/code> statement. This statement is used for pattern matching. It takes the first argument passed to the script (&lt;code>$1&lt;/code>), compares it against several patterns (&lt;code>-h&lt;/code>, &lt;code>--help&lt;/code>, &lt;code>-c&lt;/code>, &lt;code>--create&lt;/code>, &lt;code>-d&lt;/code>, &lt;code>--delete&lt;/code>), and executes the corresponding block of code based on the match.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Help (&lt;code>-h&lt;/code>, &lt;code>--help&lt;/code>)&lt;/strong>: Displays usage information and exits. This is crucial for any script, providing users with guidance on how to use the tool.&lt;/li>
+&lt;li>&lt;strong>Create (&lt;code>-c&lt;/code>, &lt;code>--create&lt;/code>)&lt;/strong>: Shifts to the next argument (the title of the post) and uses Hugo&amp;rsquo;s &lt;code>new&lt;/code> command to create a new post. If no title is provided, it exits with an error.&lt;/li>
+&lt;li>&lt;strong>Delete (&lt;code>-d&lt;/code>, &lt;code>--delete&lt;/code>)&lt;/strong>: Similar to create, but instead deletes the specified post directory using &lt;code>rm -r&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="the-conditional-if---n-1--then">The Conditional &lt;code>if [[ -n $1 ]]; then&lt;/code>&lt;/h3>
+&lt;p>Within both the create and delete blocks, there&amp;rsquo;s a conditional statement &lt;code>if [[ -n $1 ]]; then&lt;/code> that checks if the first argument (after shifting, which would be the title of the post or the post directory) is non-empty. &lt;code>-n $1&lt;/code> returns true if &lt;code>$1&lt;/code> has a non-zero length. This check ensures that the script doesn&amp;rsquo;t attempt to create or delete a post without a specified title or directory, which could lead to errors or unintended behavior.&lt;/p></description></item><item><title>Create Custom Frontmatter File in Hugo</title><link>https://light.ryankert.cc/p/create-custom-frontmatter-file-in-hugo/</link><pubDate>Wed, 27 Mar 2024 11:42:24 +0800</pubDate><guid>https://light.ryankert.cc/p/create-custom-frontmatter-file-in-hugo/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Frontmatter in Hugo is a block of YAML, TOML, or JSON at the beginning of a content file that contains metadata about the content. By default, Hugo provides a default frontmatter template for new content files. However, you can create a custom frontmatter file in Hugo by defining a custom archetype file.&lt;/p>
+&lt;p>In this tutorial, you will learn how to create a custom frontmatter file in Hugo.&lt;/p>
+&lt;h2 id="method">Method&lt;/h2>
+&lt;ol>
+&lt;li>Create a new archetype file &lt;code>./archetypes/default.md&lt;/code> in your Hugo project.&lt;/li>
+&lt;li>Define the custom frontmatter template in the archetype file.&lt;/li>
+&lt;/ol>
+&lt;h2 id="example">Example&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;{{ replace .Name &amp;#34;&lt;/span>-&lt;span class="s2">&amp;#34; &amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34; | title }}&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">date&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>{{&lt;span class="w"> &lt;/span>&lt;span class="l">.Date }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">hidden&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">comments&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Setup Github With Git using Github CLI</title><link>https://light.ryankert.cc/p/setup-github-with-git-using-github-cli/</link><pubDate>Wed, 13 Mar 2024 12:01:11 +0800</pubDate><guid>https://light.ryankert.cc/p/setup-github-with-git-using-github-cli/</guid><description>&lt;img src="https://light.ryankert.cc/p/setup-github-with-git-using-github-cli/image.png" alt="Featured image of post Setup Github With Git using Github CLI" />&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>One of the easiest way to connect your Github account with your git installed on Windows is through &lt;a class="link" href="https://desktop.github.com/" target="_blank" rel="noopener"
+>Github Desktop&lt;/a>. But, we can&amp;rsquo;t use that on wsl, so we use PAT(personal access token) to resolve this issue!&lt;/p>
+&lt;h2 id="steps-to-setup-on-windows-11">Steps to setup on Windows 11&lt;/h2>
+&lt;ol>
+&lt;li>install &lt;a class="link" href="https://git-scm.com/downloads" target="_blank" rel="noopener"
+>git&lt;/a> on Windows&lt;/li>
+&lt;li>install &lt;a class="link" href="https://desktop.github.com/" target="_blank" rel="noopener"
+>Github Desktop&lt;/a>&lt;/li>
+&lt;li>Login your &lt;a class="link" href="https://desktop.github.com/" target="_blank" rel="noopener"
+>Github Desktop&lt;/a> with your Github account&lt;/li>
+&lt;/ol>
+&lt;h2 id="install-git-on-wsl-2">install git on WSL 2&lt;/h2>
+&lt;ol>
+&lt;li>prerequisites: WSL2, Ubuntu distro&lt;/li>
+&lt;li>if your Ubuntu distro hadn&amp;rsquo;t already install git (which in my case is already installed), or you can install it with&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo apt-get install git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>check git version with&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git --version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>setup git global config&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git config --global user.email &lt;span class="s2">&amp;#34;you@example.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.name &lt;span class="s2">&amp;#34;Your Name&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="install-github-cli">install Github CLI&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>download and install Github CLI following &lt;a class="link" href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git#github-cli" target="_blank" rel="noopener"
+>this tutorial&lt;/a>. In Ubuntu, you can install it with &lt;a class="link" href="https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-raspberry-pi-os-apt" target="_blank" rel="noopener"
+>apt&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>login in the Github website&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">gh auth login
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>test: clone, commit and try to push a github repo&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git clone &amp;lt;repo url&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add *
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -am &lt;span class="s2">&amp;#34;commit name&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>output example:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ git add *
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git commit -am &amp;#34;init&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[master 563c3a8] init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 file changed, 3 insertions(+), 16 deletions(-)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git push
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Enumerating objects: 11, done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Counting objects: 100% (11/11), done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Delta compression using up to 20 threads
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Compressing objects: 100% (6/6), done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing objects: 100% (6/6), 608 bytes | 101.00 KiB/s, done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total 6 (delta 5), reused 0 (delta 0), pack-reused 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">To https://github.com/ryankert01/blog.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> af6a1b1..563c3a8 master -&amp;gt; master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Data Science Python</title><link>https://light.ryankert.cc/p/data-science-python/</link><pubDate>Fri, 08 Mar 2024 15:35:13 +0800</pubDate><guid>https://light.ryankert.cc/p/data-science-python/</guid><description>&lt;img src="https://light.ryankert.cc/p/data-science-python/image.png" alt="Featured image of post Data Science Python" />&lt;p>&lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.20.21%E2%80%AFPM.png"
+width="2026"
+height="1024"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.20.21%E2%80%AFPM_hu05d13e9b8b6d5ce5ffbce0402d4277b6_371201_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.20.21%E2%80%AFPM_hu05d13e9b8b6d5ce5ffbce0402d4277b6_371201_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="197"
+data-flex-basis="474px"
+>&lt;/p>
+&lt;p>&lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.20.26%E2%80%AFPM.png"
+width="1718"
+height="1058"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.20.26%E2%80%AFPM_hu6903a555cf396c8fa33123bf3d25357e_327884_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.20.26%E2%80%AFPM_hu6903a555cf396c8fa33123bf3d25357e_327884_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="389px"
+>
+&lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.22.50%E2%80%AFPM.png"
+width="1952"
+height="676"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.22.50%E2%80%AFPM_hub5411793a5dec90b1b25769c7d6a7fbc_305101_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.22.50%E2%80%AFPM_hub5411793a5dec90b1b25769c7d6a7fbc_305101_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="288"
+data-flex-basis="693px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.23.45%E2%80%AFPM.png"
+width="1970"
+height="1046"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.23.45%E2%80%AFPM_hu8a26e208cd89e828b5e8eefc75d51349_447746_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.23.45%E2%80%AFPM_hu8a26e208cd89e828b5e8eefc75d51349_447746_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="188"
+data-flex-basis="452px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.23.58%E2%80%AFPM.png"
+width="1956"
+height="846"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.23.58%E2%80%AFPM_hu1cbd9d76b4eac09edcb9f57a8de4246b_222361_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.23.58%E2%80%AFPM_hu1cbd9d76b4eac09edcb9f57a8de4246b_222361_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="231"
+data-flex-basis="554px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.24.12%E2%80%AFPM.png"
+width="1938"
+height="1032"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.24.12%E2%80%AFPM_hudd9ef343940cce2d277ebe3f36d8e88e_413863_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.24.12%E2%80%AFPM_hudd9ef343940cce2d277ebe3f36d8e88e_413863_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="450px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.24.21%E2%80%AFPM.png"
+width="2004"
+height="1018"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.24.21%E2%80%AFPM_huaa257b5c4aef00e2cb04194ccb7c2efa_264678_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.24.21%E2%80%AFPM_huaa257b5c4aef00e2cb04194ccb7c2efa_264678_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="472px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.25.11%E2%80%AFPM.png"
+width="1944"
+height="1150"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.25.11%E2%80%AFPM_huefb3c14fa48393428a9f9d9fc9c8bc93_470050_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.25.11%E2%80%AFPM_huefb3c14fa48393428a9f9d9fc9c8bc93_470050_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="169"
+data-flex-basis="405px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.26.34%E2%80%AFPM.png"
+width="1954"
+height="1036"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.26.34%E2%80%AFPM_huba0d9597cd7583b284ba5c07be1be989_360510_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.26.34%E2%80%AFPM_huba0d9597cd7583b284ba5c07be1be989_360510_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="188"
+data-flex-basis="452px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.26.47%E2%80%AFPM.png"
+width="1958"
+height="704"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.26.47%E2%80%AFPM_huc28c2a850a91708732c27a0cb45eb8d8_328831_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.26.47%E2%80%AFPM_huc28c2a850a91708732c27a0cb45eb8d8_328831_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="278"
+data-flex-basis="667px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.27.02%E2%80%AFPM.png"
+width="1902"
+height="1060"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.27.02%E2%80%AFPM_hu5f3bd68af741b5b9ac0e3f6791a526f1_388700_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.27.02%E2%80%AFPM_hu5f3bd68af741b5b9ac0e3f6791a526f1_388700_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="179"
+data-flex-basis="430px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.27.56%E2%80%AFPM.png"
+width="1822"
+height="1006"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.27.56%E2%80%AFPM_huf6eb6473f35dcabd8248991f09701c94_267946_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.27.56%E2%80%AFPM_huf6eb6473f35dcabd8248991f09701c94_267946_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="181"
+data-flex-basis="434px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.00%E2%80%AFPM.png"
+width="1850"
+height="1148"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.00%E2%80%AFPM_hu5a2c154a97b6a14c8aff7bf54dc7e197_271339_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.00%E2%80%AFPM_hu5a2c154a97b6a14c8aff7bf54dc7e197_271339_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="161"
+data-flex-basis="386px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.05%E2%80%AFPM.png"
+width="1972"
+height="1074"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.05%E2%80%AFPM_huf81d899571490c026f403663e8fc039b_293920_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.05%E2%80%AFPM_huf81d899571490c026f403663e8fc039b_293920_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="183"
+data-flex-basis="440px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.11%E2%80%AFPM.png"
+width="1968"
+height="1068"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.11%E2%80%AFPM_hu99a9709fed0f064da61ced058c02f0e2_329721_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.11%E2%80%AFPM_hu99a9709fed0f064da61ced058c02f0e2_329721_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="184"
+data-flex-basis="442px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.27%E2%80%AFPM.png"
+width="776"
+height="504"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.27%E2%80%AFPM_hu40c7d5954677efb45054ec624a2c0778_68821_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.27%E2%80%AFPM_hu40c7d5954677efb45054ec624a2c0778_68821_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="153"
+data-flex-basis="369px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.57%E2%80%AFPM.png"
+width="1982"
+height="966"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.57%E2%80%AFPM_hu850fa511104b34755551df77dfc1d6d7_447656_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.28.57%E2%80%AFPM_hu850fa511104b34755551df77dfc1d6d7_447656_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="205"
+data-flex-basis="492px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.29.12%E2%80%AFPM.png"
+width="1980"
+height="758"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.29.12%E2%80%AFPM_hu527d2c8b3a332336c2af4017b8337043_340048_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.29.12%E2%80%AFPM_hu527d2c8b3a332336c2af4017b8337043_340048_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="261"
+data-flex-basis="626px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.29.21%E2%80%AFPM.png"
+width="1942"
+height="984"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.29.21%E2%80%AFPM_hu7bc75ae21f9076d04af2240469e39b9c_353625_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.29.21%E2%80%AFPM_hu7bc75ae21f9076d04af2240469e39b9c_353625_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="197"
+data-flex-basis="473px"
+> &lt;img src="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.32.25%E2%80%AFPM.png"
+width="1388"
+height="1212"
+srcset="https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.32.25%E2%80%AFPM_hua9e55a35bf40b7b3489057e50fc77835_129087_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/data-science-python/Screenshot%202024-03-08%20at%203.32.25%E2%80%AFPM_hua9e55a35bf40b7b3489057e50fc77835_129087_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="114"
+data-flex-basis="274px"
+>&lt;/p></description></item><item><title>Assembly Language and Computer Organization</title><link>https://light.ryankert.cc/p/assembly-language-and-computer-organization/</link><pubDate>Wed, 06 Mar 2024 08:53:38 +0800</pubDate><guid>https://light.ryankert.cc/p/assembly-language-and-computer-organization/</guid><description>&lt;img src="https://light.ryankert.cc/p/assembly-language-and-computer-organization/cover.png" alt="Featured image of post Assembly Language and Computer Organization" />&lt;h2 id="first-look">First Look&lt;/h2>
+&lt;h3 id="moores-law">Moore&amp;rsquo;s Law&lt;/h3>
+&lt;ul>
+&lt;li>The number of transistors on a chip doubles every 18 to 24 months&lt;/li>
+&lt;/ul>
+&lt;h3 id="types-of-computer-systems">Types of Computer Systems&lt;/h3>
+&lt;ul>
+&lt;li>Embedded Systems: Cameras, Cars, Phones, etc.&lt;/li>
+&lt;li>Desktop Systems: Personal Computers&lt;/li>
+&lt;li>Server Systems: Web Servers, Database Servers, etc.&lt;/li>
+&lt;/ul>
+&lt;h3 id="seven-great-ideas-in-computer-architecture">Seven Great Ideas in Computer Architecture&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Use &lt;strong>abstractions&lt;/strong> to simplify design&lt;/p>
+&lt;ul>
+&lt;li>Example: Using high-level programming languages like C++ or Java to abstract away low-level details and simplify software development.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Make the &lt;strong>common case fast&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Example: Optimizing algorithms and data structures for the most frequently performed operations to improve overall performance.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Performance via &lt;strong>parallelism&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Example: Utilizing multi-threading or distributed computing to execute multiple tasks simultaneously and achieve faster execution times.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Performance via &lt;strong>pipelining&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Example: Breaking down complex tasks into smaller stages and processing them concurrently to improve throughput and reduce latency.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Performance via &lt;strong>prediction&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Example: Implementing branch prediction techniques to minimize the impact of conditional branches on the execution pipeline.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hierarchy&lt;/strong> of memories&lt;/p>
+&lt;ul>
+&lt;li>Example: Utilizing different levels of cache memory (L1, L2, L3) to store frequently accessed data closer to the processor for faster access.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Dependability via &lt;strong>redundancy&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Example: Implementing redundant components or backup systems to ensure system reliability and fault tolerance.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="程式處理階層-software-hierarchy">程式處理階層 (Software Hierarchy)&lt;/h3>
+&lt;ul>
+&lt;li>應用程式(Application software)：為了達成特定需求(如遊戲、圖片\影片編輯&amp;hellip;&amp;hellip;等等)，由高階語言編成的軟體。&lt;/li>
+&lt;li>系統軟體(System software) ：負責管理及協調硬體階層，包括了作業系統及編譯器等等。&lt;/li>
+&lt;li>硬體層面(Hardware)：囊括了處理器、記憶體，以及IO控制器等等.&lt;/li>
+&lt;/ul>
+&lt;h3 id="程式語言處理階層-language-hierarchy">程式語言處理階層 (Language Hierarchy)&lt;/h3>
+&lt;ul>
+&lt;li>高階語言(High level language)：貼近人類語言，容易閱讀及編寫，透過編譯器或直譯器轉換為機器碼。&lt;/li>
+&lt;li>組合語言(Assembly language)：屬於低階語言，指令多與處理器直接對應，以文字來描述機器的行為，透過組譯器轉換為機械碼。&lt;/li>
+&lt;li>機器碼(Machine code)：由0和1構成的處理器的指令集，電腦可以直接識別。&lt;/li>
+&lt;/ul>
+&lt;h3 id="電腦的元件">電腦的元件：&lt;/h3>
+&lt;p>不論是嵌入式、伺服器，或是桌上型電腦，都包含了這5個主要部分：&lt;/p>
+&lt;ol>
+&lt;li>輸入(Input)&lt;/li>
+&lt;li>輸出(Output)&lt;/li>
+&lt;li>記憶體(Memory)&lt;/li>
+&lt;li>資料路徑(Datapath)&lt;/li>
+&lt;li>控制(Control)&lt;/li>
+&lt;/ol>
+&lt;p>其中，資料路徑(Datapath)與控制(Control)有時會合併成為處理器(Processor)。&lt;/p>
+&lt;h2 id="evaulating-computer-performance">Evaulating Computer Performance&lt;/h2>
+&lt;h3 id="response-time-vs-throughput">Response Time vs. Throughput&lt;/h3>
+&lt;ul>
+&lt;li>Response Time(反應時間): Also known as elapsed time, it represents the time required to complete a task. It includes CPU time, I/O, OS overhead, and idle time.&lt;/li>
+&lt;li>Throughput(生產能力): The amount of work that can be completed within a certain period of time.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cpu-time">CPU time&lt;/h3>
+&lt;p>$$CPU time = IC \times CPI \times t$$&lt;/p>
+&lt;ul>
+&lt;li>IC: Instruction count&lt;/li>
+&lt;li>CPI: Cycles per instruction&lt;/li>
+&lt;li>t: Clock cycle time&lt;/li>
+&lt;/ul>
+&lt;h3 id="cpi">CPI&lt;/h3>
+&lt;p>CPI (Cycle per instruction) ，表示每執行一個指令(Instruction)，所要花費的時脈周期。&lt;br>
+Clock cycle time (t) ，表示每一個時脈周期所花費的時間。&lt;br>
+Clock Cycles (ClockCycles) ，表示執行所有指令所花費的時脈周期個數。
+$$ClockCycles = \sum IC_i \times CPI_i$$&lt;br>
+Average CPI: $$avgCPI = \frac{ClockCycles}{IC}$$&lt;br>
+指令的個數由編譯器、ISA(ISA instruction set architecture)、程式與演算法共同決定。&lt;/p>
+&lt;h3 id="cpu-power">CPU Power&lt;/h3>
+&lt;p>$$Power = Capacitance \times Voltage^2 \times Frequency$$&lt;/p>
+&lt;p>&lt;strong>Power Wall&lt;/strong>: To achieve high frequency and low power, it is necessary to mitigate the impact of both factors. However, after 2004, the techniques of &lt;strong>reducing voltage&lt;/strong> and &lt;strong>cooling&lt;/strong> reached saturation and stagnation. This resulted in a power wall, which posed a significant challenge in improving processor performance. To overcome this challenge, the focus shifted towards the development of multi-core processors.&lt;/p>
+&lt;h3 id="amdahls-law-阿姆達爾定律">Amdahl&amp;rsquo;s Law (阿姆達爾定律)&lt;/h3>
+&lt;p>$$Speedup = \frac{1}{(1 - P) + \frac{P}{S}}$$&lt;/p>
+&lt;ul>
+&lt;li>P: Fraction of the program that can be parallelized&lt;/li>
+&lt;li>S: Speedup of the parallelizable portion&lt;/li>
+&lt;/ul>
+&lt;p>Since the parallelizable portion of the program is limited by the sequential portion, &lt;strong>the speedup is also limited&lt;/strong>. This is known as Amdahl&amp;rsquo;s Law.&lt;/p>
+&lt;h2 id="cost-per-die晶片成本">Cost per die(晶片成本)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Cost per die:&lt;br>
+$$CostPerDie = \frac{CostPerWafer}{DiePerWafer \times Yield}$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Die per wafer:
+$$DiePerWafer \approx \frac{WaferArea}{DieArea} \approx \frac{\pi \times (WaferDiameter/2)^2}{DieArea}$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Yield:
+$$Yield = \frac{1}{(1-(DefectsPerArea \times DieArea))^N}$$&lt;/p>
+&lt;ul>
+&lt;li>DefectsPerArea: The number of defects per unit area&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Intro of Data Science</title><link>https://light.ryankert.cc/p/intro-of-data-science/</link><pubDate>Fri, 01 Mar 2024 14:19:56 +0800</pubDate><guid>https://light.ryankert.cc/p/intro-of-data-science/</guid><description>&lt;p>本筆記來自資工系資料科學導論課程，第一章！&lt;/p>
+&lt;h2 id="foundations-of-data-science">Foundations of Data Science&lt;/h2>
+&lt;ul>
+&lt;li>資料科學是一個完整過程的研究方法，包括蒐集資料、觀察資料、探索資料和提出假設，然後驗證結果（使用統計或數學方法）。&lt;/li>
+&lt;li>資料科學使用的資料不是原始資料（Raw Data），而是一種有意義的資料，稱為資訊（Information），知識就是連接的資訊。&lt;/li>
+&lt;/ul>
+&lt;h2 id="types-of-data">Types of data&lt;/h2>
+&lt;h3 id="structured-unstructured">Structured, Unstructured&lt;/h3>
+&lt;ol>
+&lt;li>Structured data
+&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/image-1.png"
+width="1300"
+height="398"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/image-1_huf6ad1337608b22e7a4f29f841b7151b6_236618_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/intro-of-data-science/image-1_huf6ad1337608b22e7a4f29f841b7151b6_236618_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="structured data"
+class="gallery-image"
+data-flex-grow="326"
+data-flex-basis="783px"
+>&lt;/li>
+&lt;li>Unstructured data: need &lt;strong>data cleaning&lt;/strong> to make it structured
+&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/image-2.png"
+width="556"
+height="229"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/image-2_hud481184d7159e8bb1fb1f4f38a86af2e_241198_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/intro-of-data-science/image-2_hud481184d7159e8bb1fb1f4f38a86af2e_241198_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Unstructured data"
+class="gallery-image"
+data-flex-grow="242"
+data-flex-basis="582px"
+>&lt;/li>
+&lt;li>half-structured data: eg. json
+&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/image-3.png"
+width="471"
+height="224"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/image-3_hu4720232ebe5243f8aea55fcc443285aa_193406_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/intro-of-data-science/image-3_hu4720232ebe5243f8aea55fcc443285aa_193406_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="half"
+class="gallery-image"
+data-flex-grow="210"
+data-flex-basis="504px"
+>&lt;/li>
+&lt;/ol>
+&lt;h3 id="質的資料與量的資料-qualitative-and-quantitative-data">質的資料與量的資料 (Qualitative and Quantitative Data)&lt;/h3>
+&lt;p>&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/image-6.png"
+width="477"
+height="214"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/image-6_hu4c28aa2ccbc4cc5284b68d9efc23a4a4_90994_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/intro-of-data-science/image-6_hu4c28aa2ccbc4cc5284b68d9efc23a4a4_90994_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="534px"
+>&lt;/p>
+&lt;ol>
+&lt;li>質的資料（Qualitative Data）
+&lt;ul>
+&lt;li>名目尺度（Nominal Data）
+&lt;ul>
+&lt;li>用來區分不同類別的資料，但沒有順序之分。&lt;/li>
+&lt;li>eg. 性別、國籍、學校名稱&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>順序尺度（Ordinal Data）
+&lt;ul>
+&lt;li>有順序之分，但沒有固定的間隔。&lt;/li>
+&lt;li>eg. 學生的成績、學生的年級，例如：快樂程度 5 高於 1；滿意度 8 小於 10 等。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>量的資料（Quantitative Data）
+&lt;ul>
+&lt;li>間隔尺度（Interval Data）
+&lt;ul>
+&lt;li>有固定的間隔，但沒有絕對零點。&lt;/li>
+&lt;li>eg. 溫度、時間&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>比例尺度（Ratio Data） - 有固定的間隔，且有絕對零點。 - eg. 身高、體重、年齡
+&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/image-4.png"
+width="928"
+height="540"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/image-4_hu089bf711b578eecabdffdacb35a28903_328357_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/intro-of-data-science/image-4_hu089bf711b578eecabdffdacb35a28903_328357_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="171"
+data-flex-basis="412px"
+>
+&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/image-5.png"
+width="914"
+height="452"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/image-5_hu1560a65b276d11895084614650a2bf0b_97277_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/intro-of-data-science/image-5_hu1560a65b276d11895084614650a2bf0b_97277_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="202"
+data-flex-basis="485px"
+>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="five-steps-of-data-science">Five Steps of Data Science&lt;/h2>
+&lt;ul>
+&lt;li>「資料採礦」（Data Mining）：find pattern（樣式），是使用軟體技術分析資料庫儲存的龐大資料，以便從這些資料中找出隱藏的規則性或因果關係。&lt;/li>
+&lt;li>Goals of Data Mining:
+&lt;ul>
+&lt;li>Prediction
+&lt;ul>
+&lt;li>Predict based on possesed data. eg. Predict the stock price.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Identification
+&lt;ul>
+&lt;li>eg. Identify spam email by finding the pattern.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Classification
+&lt;ul>
+&lt;li>eg. Classify the types of user, and send ads accordingly.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Optimization
+&lt;ul>
+&lt;li>eg. 便利商店因為賣場面積有限，只能銷售 1000 種商品，我們需要最佳化商品的選擇、選購動線設計和商品排列的架位，以便創造最大的營業額。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="data-mining-steps-kdd-steps">Data Mining steps (KDD steps)&lt;/h3>
+&lt;p>從原始資料（Raw Data）開始，經過多個步驟的處理後，直到從資料探索出知識為止。這個過程稱為知識發現（Knowledge Discovery in Databases, KDD）。&lt;/p>
+&lt;p>&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/Picturess1.jpg"
+width="2250"
+height="1166"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/Picturess1_hu9614a51676cc5997b1b59ef0e1097be2_290735_480x0_resize_q75_box.jpg 480w, https://light.ryankert.cc/p/intro-of-data-science/Picturess1_hu9614a51676cc5997b1b59ef0e1097be2_290735_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="KDD"
+class="gallery-image"
+data-flex-grow="192"
+data-flex-basis="463px"
+>&lt;/p>
+&lt;h3 id="data-mining-process">Data Mining Process&lt;/h3>
+&lt;p>資料科學和資料分析（Data Analytics）最大差異在於資料科學必須遵循結構化步驟。&lt;/p>
+&lt;p>&lt;img src="https://light.ryankert.cc/p/intro-of-data-science/image.png"
+width="264"
+height="369"
+srcset="https://light.ryankert.cc/p/intro-of-data-science/image_hua8948c67f5aeb4517e236299b9d35b26_84905_480x0_resize_box_3.png 480w, https://light.ryankert.cc/p/intro-of-data-science/image_hua8948c67f5aeb4517e236299b9d35b26_84905_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="71"
+data-flex-basis="171px"
+>&lt;/p>
+&lt;ol>
+&lt;li>Define the problem (ask an interesting question)&lt;/li>
+&lt;li>Collect the data：取得所有與問題相關的原始資料（Raw Data）&lt;/li>
+&lt;li>Explore the data：進一步整理、歸納和描述資料，以便進行資料分析（Data Analysis）。&lt;/li>
+&lt;li>Model the data：comfirm previous assumptions，使用統計和機器學習模型來驗證提出的假設&lt;/li>
+&lt;li>Communicate and visualize the results：使用圖表等視覺化方式來呈現結果。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>test&lt;/strong> : 考情境判斷，判斷情況是哪種資料採礦的步驟。&lt;/p></description></item><item><title>Russia Culture Class</title><link>https://light.ryankert.cc/p/russia-culture-class/</link><pubDate>Thu, 29 Feb 2024 16:31:39 +0800</pubDate><guid>https://light.ryankert.cc/p/russia-culture-class/</guid><description>&lt;p>列夫·尼古拉維奇·托爾斯泰(Лев Никола́евич Толсто́й)於 1828 年 9 月 9 日出生於亞斯納亞波利亞納(Ясная Поляна﻿)莊園 ﻿ 圖拉省。1910 年 11 月 10 日過世，享年 82 歲。&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>請問「亞斯納亞波利亞納」的意思是什麼?&lt;/strong>&lt;br>
+「亞斯納亞波利亞納」(Ясная Поляна)在俄語中意為「明亮的草原」或「光明的空地」。這個名字直接反映了這個地方的自然美景和開闊的景色。亞斯納亞波利亞納是列夫·托爾斯泰的家族莊園，也是他的出生地，位於今天的俄羅斯圖拉州。托爾斯泰大部分的生命都在這裡度過，並在這裡寫下了他的許多著名作品，如《戰爭與和平》和《安娜·卡列尼娜》。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>俄羅斯人的姓名與稱呼方式為何?&lt;/strong>&lt;br>
+俄羅斯人的姓名通常由三部分組成：名字（имя），父名（отчество），和姓氏（фамилия）。名字是個人的名稱，父名是由父親的名字加上性別相應的後綴形成（男性後綴為-ович 或-евич，女性後綴為-овна 或-евна），表示「某某之子」或「某某之女」。姓氏則是家族的名稱。例如，列夫·尼古拉維奇·托爾斯泰的名字是列夫（Lev），父名尼古拉維奇（Nikolaevich）意味著“尼古拉的兒子”，姓氏托爾斯泰（Tolstoy）。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>在稱呼方面，正式場合下通常使用全名（名字+父名），這是一種表達尊敬的方式。不太正式的場合，人們可能只使用名字。非常親近的人之間，可能會使用昵稱或名字的縮短形式。&lt;/p>
+&lt;h3 id="мир米爾的意思">Мир(米爾)的意思?&lt;/h3>
+&lt;p>在俄語中，“Мир”（米爾）有幾個意思，具體含義取決於上下文：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>和平&lt;/strong>：最常見的含義之一是“和平”或“無戰爭狀態”。這個詞用於描述國家或人民之間沒有衝突或戰爭的狀態。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>世界&lt;/strong>：另一個常見含義是指整個世界或宇宙。在這種用法中，它可以指代地球、人類社會或者是所有存在的事物的總和。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>社區或村莊&lt;/strong>：在歷史上，特別是在俄羅斯帝國和蘇聯的文獻中，“мир”也被用來指一個農村社區或集體農莊，這是俄國傳統社會的基本單位。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>因此，“Мир”的確切含義需要根據講話或書寫的具體上下文來解釋。&lt;/p></description></item><item><title>Test</title><link>https://light.ryankert.cc/p/test/</link><pubDate>Thu, 29 Feb 2024 15:29:42 +0800</pubDate><guid>https://light.ryankert.cc/p/test/</guid><description>&lt;p>hihi&lt;/p>
+&lt;p>$$A=\frac{1}{x}$$&lt;/p></description></item><item><title>Archives</title><link>https://light.ryankert.cc/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/archives/</guid><description/></item><item><title>Friends' Posts</title><link>https://light.ryankert.cc/friend-posts/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/friend-posts/</guid><description>&lt;div class="posts_friends" markdown="1">&lt;/div>
+&lt;script>
+function createElementcc(elementType, style, link, innerhtml) {
+let elementCreated = document.createElement(elementType);
+if(link)elementCreated.href = link;
+elementCreated.innerHTML = innerhtml;
+if(style)elementCreated.style = style;
+return elementCreated;
+}
+console.log("hello");
+var p_f = document.querySelector('.posts_friends');
+const request = 'https://ryankert01.github.io/rss-friend/sorted.json';
+let d = new Date();
+fetch(request)
+.then(response => response.json())
+.then(json => {
+for(let i = 0; i &lt; json.length; i++) {
+console.log(i);
+console.log(json[i].title);
+let currentItem = document.createElement('div');
+d = new Date(json[i].date);
+let e;
+let monthAppend = d.getMonth()+1;
+monthAppend = monthAppend.toString();
+monthAppend = monthAppend.length &lt; 2 ? "0" + monthAppend : monthAppend;
+let dayAppend = d.getDate();
+dayAppend = dayAppend.toString();
+dayAppend = dayAppend.length &lt; 2 ? "0" + dayAppend : dayAppend;
+let tempAppend = monthAppend + "-" + dayAppend + " ";
+console.log(json[i].title);
+let margin = 10;
+let style = "border-bottom: none; opacity: 65%; margin: ";
+style += margin.toString() + "px";
+e = createElementcc(
+'b',
+style,
+null,
+tempAppend
+);
+console.log(e)
+currentItem.appendChild(e);
+e = createElementcc('a', null, json[i].link, json[i].title);
+e.target = "_blank";
+e.rel = "noopener noreferrer";
+currentItem.appendChild(e);
+console.log(e)
+e = createElementcc('a', "opacity: 75%;", json[i].author.link, json[i].author.name);
+e.classList.add('link');
+e.target = "_blank";
+e.rel = "noopener noreferrer";
+e.classList.add("e-author");
+currentItem.appendChild(e);
+console.log(e)
+p_f.appendChild(currentItem);
+console.log(currentItem);
+}
+})
+console.log(request)
+console.log("hello");
+&lt;/script>
+&lt;style>
+.e-author {
+position: absolute;
+right: 15%;
+}
+@media screen and (max-width: 950px) {
+.e-author {
+position: relative;
+left: 15px
+}
+}
+&lt;/style>
+&lt;p>for how to build one, check out this &lt;a class="link" href="" >post&lt;/a>.&lt;br>
+powered by &lt;a class="link" href="https://github.com/ryankert01/rss-friend" target="_blank" rel="noopener"
+>rss-friend&lt;/a> with ❤️&lt;/p></description></item><item><title>Hello World</title><link>https://light.ryankert.cc/p/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/p/hello-world/</guid><description>&lt;img src="https://light.ryankert.cc/p/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
+&lt;p>For more information about this theme, check the documentation: &lt;a class="link" href="https://docs.stack.jimmycai.com/" target="_blank" rel="noopener"
+>https://docs.stack.jimmycai.com/&lt;/a>&lt;/p>
+&lt;p>Want a site like this? Check out &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>hugo-theme-stack-stater&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Links</title><link>https://light.ryankert.cc/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+&lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">links&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub is the world&amp;#39;s largest software development platform.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.com&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://www.typescriptlang.org&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ts-logo-128.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://light.ryankert.cc/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/search/</guid><description/></item></channel></rss>
