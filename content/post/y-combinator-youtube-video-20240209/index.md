@@ -21,10 +21,6 @@ tags:
 
 {{< youtube TwDJhUJL-5o >}}
 
-## 🎙️ The Birth of "The Light Cone"
-
-Welcome to "The Light Cone," a podcast exploring the past and future of technology. Hosted by Gary, Jared Harge, and Diana, partners at Y Combinator, the podcast derives its name from the concept of a light cone in special relativity. Just as light spreads out in a cone shape, our discussions delve into technological innovations shaping the present and future, drawing connections between past achievements and future possibilities.
-
 
 ## 🧠 AI's Expanding Role in Startups
 
