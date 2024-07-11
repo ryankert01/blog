@@ -67,3 +67,79 @@ remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
 To https://github.com/ryankert01/blog.git
    af6a1b1..563c3a8  master -> master
 ```
+
+## Get verified tag ever when you commits
+
+![github verified tag](image-1.png)
+
+
+
+1. **Generate a GPG Key:**
+
+   Open a terminal and generate a new GPG key pair:
+
+   ```sh
+   gpg --full-generate-key
+   ```
+
+   Follow the prompts to create your key. Choose the following options when prompted:
+   - Select kind of key: `(1) RSA and RSA (default)`
+   - Key size: `4096`
+   - Key expiration: `0` (never expires)
+
+2. **List Your GPG Keys:**
+
+   After generating your key, you can list your keys to get the key ID:
+
+   ```sh
+   gpg --list-secret-keys --keyid-format LONG
+   ```
+
+   Look for the `sec` section and note down the `long key ID`.
+
+3. **Copy Your GPG Key:**
+
+   Use the `long key ID` to copy your GPG key:
+
+   ```sh
+   gpg --armor --export <your-long-key-id> > my-gpg-key.asc
+   ```
+4. **add GPG key to Github account**
+
+
+   Use the File Path with GitHub CLI:
+
+   Now, you can use the file path with GitHub CLI:
+
+   ```sh
+   gh gpg-key add my-gpg-key.asc
+   ```
+   Yes, you can use GitHub CLI (gh) to simplify the process of adding your GPG key to GitHub. Here are the steps to do so:
+
+
+
+5. **Configure Git to Sign Your Commits:**
+
+   Configure Git to use your GPG key for signing commits:
+
+   ```sh
+   git config --global user.signingkey <your-long-key-id>
+   git config --global commit.gpgSign true
+   ```
+
+6. **Make and Sign a Commit:**
+
+   Make a new commit and push it to GitHub. The commit should be signed automatically if you enabled commit signing by default:
+
+   ```sh
+   git commit -m "Your commit message"
+   git push
+   ```
+
+   To manually sign a commit, use the `-S` flag:
+
+   ```sh
+   git commit -S -m "Your commit message"
+   ```
+
+These steps leverage GitHub CLI to streamline the process of adding your GPG key to GitHub and configuring Git to sign your commits.
