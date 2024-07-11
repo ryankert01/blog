@@ -1,6 +1,6 @@
 ---
 title: "Setup Github With Git using Github CLI"
-description: setup github account with git, in Ubuntu, WSL 2 and Windows 11, using Github CLI
+description: setup github account with git, and gpg key, in Ubuntu, WSL 2 and Windows 11, using Github CLI
 date: 2024-03-13T12:01:11+08:00
 image: image.png
 ---
