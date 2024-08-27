@@ -142,8 +142,8 @@ To https://github.com/ryankert01/blog.git
    git commit -S -m "Your commit message"
    ```
 
+These steps leverage GitHub CLI to streamline the process of adding your GPG key to GitHub and configuring Git to sign your commits.
+
 ## Reference
 
 [Git GPG Setup for macOS](https://hackmd.io/@kolyasapphire/H1ESwImjY)
-
-These steps leverage GitHub CLI to streamline the process of adding your GPG key to GitHub and configuring Git to sign your commits.
