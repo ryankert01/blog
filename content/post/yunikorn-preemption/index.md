@@ -1,6 +1,6 @@
 ---
 title: "Apache Yunikorn 的 Preemption 機制"
-description: "YuniKorn中的預佔機制允許高優先級任務通過預佔低優先級任務來動態重新分配資源，確保關鍵工作負載獲得必要的資源。這種主動機制維持系統穩定性和公平性，並與Kubernetes的優先級類別和YuniKorn的層級佇列系統整合。"
+description: "YuniKorn的預佔機制是一種智能資源管理功能，允許高優先級任務在需要時自動獲取資源，以確保關鍵工作負載的效能和系統整體的資源利用率。"
 date: 2024-09-17T11:42:24+08:00
 image: 
 hidden: false
