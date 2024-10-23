@@ -1,13 +1,13 @@
 ---
-title: "Setup Github With Git using Github CLI"
-description: setup github account with git, and gpg key, in Ubuntu, WSL 2 and Windows 11, using Github CLI
+title: "Setup Github and get your commit signed With Git and Github CLI"
+description: setup github account with git, and gpg key, in Mac, Linux(debian), WSL 2 and Windows, and sign your commit with GPG key(get verified tag on Github)
 date: 2024-03-13T12:01:11+08:00
 image: image.png
 ---
 
 ## Intro
 
-One of the easiest way to connect your Github account with your git installed on Windows is through [Github Desktop](https://desktop.github.com/). But, we can't use that on wsl, so we use PAT(personal access token) to resolve this issue!
+One of the easiest way to connect your Github account with your git installed on Mac or Windows is through [Github Desktop](https://desktop.github.com/). But, we can't use that on wsl, so we use PAT(personal access token) to resolve this issue!
 
 ## Steps to setup on Windows 11
 
@@ -15,18 +15,16 @@ One of the easiest way to connect your Github account with your git installed on
 2. install [Github Desktop](https://desktop.github.com/)
 3. Login your [Github Desktop](https://desktop.github.com/) with your Github account
 
-## install git on WSL 2
+## install git on Mac/WSL 2/ Linux
 
-1. prerequisites: WSL2, Ubuntu distro
-2. if your Ubuntu distro hadn't already install git (which in my case is already installed), or you can install it with 
-```bash
-sudo apt-get install git
-```
-3. check git version with
+1. Install git(if not already installed)
+   - Mac: `brew install git`
+   - Linux/WSL2(debian): `sudo apt-get install git`
+2. check git version with
 ```bash
 git --version
 ```
-4. setup git global config
+3. setup git global config
 ```bash
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
@@ -68,11 +66,9 @@ To https://github.com/ryankert01/blog.git
    af6a1b1..563c3a8  master -> master
 ```
 
-## Get verified tag ever when you commits
+## Sign your commit with GPG key
 
 ![github verified tag](image-1.png)
-
-
 
 1. **Generate a GPG Key:**
 
@@ -95,7 +91,7 @@ To https://github.com/ryankert01/blog.git
    gpg --list-secret-keys --keyid-format LONG
    ```
 
-   Look for the `sec` section and note down the `long key ID`.
+   Look for the `sec` section and you can get the `long key ID` at the second line.
 
 3. **Copy Your GPG Key:**
 
