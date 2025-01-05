@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yunikorn on Ryan Kert</title><link>https://light.ryankert.cc/tags/yunikorn/</link><description>Recent content in Yunikorn on Ryan Kert</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 17 Sep 2024 11:42:24 +0800</lastBuildDate><atom:link href="https://light.ryankert.cc/tags/yunikorn/index.xml" rel="self" type="application/rss+xml"/><item><title>Apache Yunikorn 的 Preemption 機制</title><link>https://light.ryankert.cc/p/apache-yunikorn-%E7%9A%84-preemption-%E6%A9%9F%E5%88%B6/</link><pubDate>Tue, 17 Sep 2024 11:42:24 +0800</pubDate><guid>https://light.ryankert.cc/p/apache-yunikorn-%E7%9A%84-preemption-%E6%A9%9F%E5%88%B6/</guid><description>&lt;h2 id="目的和功能">目的和功能
+&lt;/h2>&lt;p>YuniKorn 中的預佔機制允許高優先級任務通過預佔低優先級任務來動態重新分配資源，確保關鍵工作負載獲得必要的資源。這種主動機制維持系統穩定性和公平性，並與 Kubernetes 的優先級類別和 YuniKorn 的層級佇列系統整合。&lt;/p>
+&lt;h2 id="預佔類型preemption-type">預佔類型(Preemption type)
+&lt;/h2>&lt;p>YuniKorn 提供兩種預佔類型：&lt;/p>
+&lt;ol>
+&lt;li>通用預佔：基於層級佇列模型，允許 Pod 選擇不運行。&lt;/li>
+&lt;li>DaemonSet 預佔：確保必須在特定節點上運行的 Pod 能夠運行。&lt;/li>
+&lt;/ol>
+&lt;h2 id="主要特點">主要特點
+&lt;/h2>&lt;ul>
+&lt;li>延遲觸發：預佔在指定延遲後觸發，可通過&lt;code>preemption.delay&lt;/code>屬性配置。&lt;/li>
+&lt;li>層級佇列模型：預佔確保每個佇列的資源使用達到至少保證的資源量。&lt;/li>
+&lt;li>預佔法則：YuniKorn 實施七條預佔法則，以防止預佔風暴或循環。（下面會說明）&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置">配置
+&lt;/h2>&lt;ol>
+&lt;li>
+&lt;p>佇列配置：可以在佇列級別使用&lt;code>preemption.policy&lt;/code>和&lt;code>preemption.delay&lt;/code>等屬性配置預佔。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pod 級別配置：Pod 可以使用&lt;code>yunikorn.apache.org/allow-preemption&lt;/code>註釋選擇不被預佔。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>優先級類別：YuniKorn 與 Kubernetes 的 PriorityClasses 整合以進行預佔。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="預佔法則preemption-rules">預佔法則(Preemption Rules)
+&lt;/h2>&lt;p>YuniKorn 遵循七條預佔法則，以確保公平和高效的資源分配：&lt;/p>
+&lt;ol>
+&lt;li>預佔策略是強烈建議，而非保證。&lt;/li>
+&lt;li>預佔不能使佇列低於其保證容量。&lt;/li>
+&lt;li>任務不能預佔同一應用程序中的其他任務。&lt;/li>
+&lt;li>只有當佇列低於保證容量時，任務才會觸發預佔。&lt;/li>
+&lt;li>只有當佇列超過保證容量時，任務才會被預佔。&lt;/li>
+&lt;li>任務只能預佔優先級較低或相等的任務。&lt;/li>
+&lt;li>任務不能預佔其預佔圍欄之外的任務。&lt;/li>
+&lt;/ol>
+&lt;h2 id="預佔圍欄preemption-fencing">預佔圍欄(Preemption fencing)
+&lt;/h2>&lt;p>YuniKorn 引入了預佔圍欄(Preemption fencing)的概念，允許將預佔範圍限制在某些佇列中。這確保特定佇列（及其子佇列）的優先級在內部評估，防止在多租戶環境中進行跨租戶預佔。&lt;/p>
+&lt;p>通過實施這些預佔功能，YuniKorn 為複雜的 Kubernetes 環境提供了靈活而強大的調度解決方案，實現了跨各種工作負載和租戶的高效資源分配和優先級排序。&lt;/p></description></item></channel></rss>

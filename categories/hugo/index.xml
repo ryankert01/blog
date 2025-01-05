@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Ryan Kert</title><link>https://light.ryankert.cc/categories/hugo/</link><description>Recent content in Hugo on Ryan Kert</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Mar 2024 12:22:20 +0800</lastBuildDate><atom:link href="https://light.ryankert.cc/categories/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Write a Shell Script to Automate Create and Delete Post on Hugo</title><link>https://light.ryankert.cc/p/write-a-shell-script-to-automate-create-and-delete-post-on-hugo/</link><pubDate>Wed, 27 Mar 2024 12:22:20 +0800</pubDate><guid>https://light.ryankert.cc/p/write-a-shell-script-to-automate-create-and-delete-post-on-hugo/</guid><description>&lt;h3 id="the-script-overview">The Script Overview
+&lt;/h3>&lt;p>The script provided allows for easy creation and deletion of blog posts with Hugo, a popular static site generator. By passing different flags and the title of your blog post as arguments, you can quickly manage your content without directly interacting with the file system or Hugo commands.&lt;/p>
+&lt;h3 id="usage">Usage
+&lt;/h3>&lt;p>To use this script, you would typically invoke it from the command line with the appropriate flags and arguments. For example, to create a post titled &amp;ldquo;My First Blog Post,&amp;rdquo; you would run:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./post.sh -c blog-post
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And to delete a post with the same title, you would use:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./post.sh -d blog-post
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="the-script">The Script
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="nb">test&lt;/span> &lt;span class="nv">$#&lt;/span> -gt 0&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h&lt;span class="p">|&lt;/span>--help&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Usage: &lt;/span>&lt;span class="nv">$package&lt;/span>&lt;span class="s2"> [options] application [arguments]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34; &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Options:&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-h, --help Show brief help&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-c, --create Create a new post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-d, --delete Delete an existing post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -c&lt;span class="p">|&lt;/span>--create&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> -n &lt;span class="nv">$1&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;creating post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hugo new content/post/&lt;span class="nv">$1&lt;/span>/index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2"> created.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;no post name specified&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -d&lt;span class="p">|&lt;/span>--delete&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> -n &lt;span class="nv">$1&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> rm -r content/post/&lt;span class="nv">$1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2"> deleted.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;no post directory specified&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> *&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="file-header-usrbinenv-bash">file header &lt;code>#!/usr/bin/env bash&lt;/code>
+&lt;/h3>&lt;p>The script starts with a shebang line &lt;code>#!/usr/bin/env bash&lt;/code> that specifies the interpreter to use for executing the script. This line is essential for running the script as an executable file. (happy running in zsh)&lt;/p>
+&lt;h3 id="understanding-while-test---gt-0">Understanding &lt;code>while test $# -gt 0;&lt;/code>
+&lt;/h3>&lt;p>The script begins with a &lt;code>while&lt;/code> loop that continues as long as there are arguments passed to the script (&lt;code>$#&lt;/code> is greater than 0). &lt;code>$#&lt;/code> is a special parameter in shell scripts that represents the number of arguments passed to the script. This loop allows the script to process multiple arguments sequentially, making it versatile and robust for different use cases.&lt;/p>
+&lt;h3 id="shift-and-argument-processing">&lt;code>shift&lt;/code> and Argument Processing
+&lt;/h3>&lt;p>Within the loop, we use the &lt;code>shift&lt;/code> command to shift the arguments passed to the script. This command moves the positional parameters (&lt;code>$1&lt;/code>, &lt;code>$2&lt;/code>, etc.) to the left, effectively removing the first argument. This is crucial for processing different flags and arguments in the script.&lt;/p>
+&lt;h3 id="how-case-works">How &lt;code>case&lt;/code> Works
+&lt;/h3>&lt;p>Inside the &lt;code>while&lt;/code> loop, we encounter a &lt;code>case&lt;/code> statement. This statement is used for pattern matching. It takes the first argument passed to the script (&lt;code>$1&lt;/code>), compares it against several patterns (&lt;code>-h&lt;/code>, &lt;code>--help&lt;/code>, &lt;code>-c&lt;/code>, &lt;code>--create&lt;/code>, &lt;code>-d&lt;/code>, &lt;code>--delete&lt;/code>), and executes the corresponding block of code based on the match.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Help (&lt;code>-h&lt;/code>, &lt;code>--help&lt;/code>)&lt;/strong>: Displays usage information and exits. This is crucial for any script, providing users with guidance on how to use the tool.&lt;/li>
+&lt;li>&lt;strong>Create (&lt;code>-c&lt;/code>, &lt;code>--create&lt;/code>)&lt;/strong>: Shifts to the next argument (the title of the post) and uses Hugo&amp;rsquo;s &lt;code>new&lt;/code> command to create a new post. If no title is provided, it exits with an error.&lt;/li>
+&lt;li>&lt;strong>Delete (&lt;code>-d&lt;/code>, &lt;code>--delete&lt;/code>)&lt;/strong>: Similar to create, but instead deletes the specified post directory using &lt;code>rm -r&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="the-conditional-if---n-1--then">The Conditional &lt;code>if [[ -n $1 ]]; then&lt;/code>
+&lt;/h3>&lt;p>Within both the create and delete blocks, there&amp;rsquo;s a conditional statement &lt;code>if [[ -n $1 ]]; then&lt;/code> that checks if the first argument (after shifting, which would be the title of the post or the post directory) is non-empty. &lt;code>-n $1&lt;/code> returns true if &lt;code>$1&lt;/code> has a non-zero length. This check ensures that the script doesn&amp;rsquo;t attempt to create or delete a post without a specified title or directory, which could lead to errors or unintended behavior.&lt;/p></description></item><item><title>Create Custom Frontmatter File in Hugo</title><link>https://light.ryankert.cc/p/create-custom-frontmatter-file-in-hugo/</link><pubDate>Wed, 27 Mar 2024 11:42:24 +0800</pubDate><guid>https://light.ryankert.cc/p/create-custom-frontmatter-file-in-hugo/</guid><description>&lt;h2 id="intro">Intro
+&lt;/h2>&lt;p>Frontmatter in Hugo is a block of YAML, TOML, or JSON at the beginning of a content file that contains metadata about the content. By default, Hugo provides a default frontmatter template for new content files. However, you can create a custom frontmatter file in Hugo by defining a custom archetype file.&lt;/p>
+&lt;p>In this tutorial, you will learn how to create a custom frontmatter file in Hugo.&lt;/p>
+&lt;h2 id="method">Method
+&lt;/h2>&lt;ol>
+&lt;li>Create a new archetype file &lt;code>./archetypes/default.md&lt;/code> in your Hugo project.&lt;/li>
+&lt;li>Define the custom frontmatter template in the archetype file.&lt;/li>
+&lt;/ol>
+&lt;h2 id="example">Example
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;{{ replace .Name &amp;#34;&lt;/span>-&lt;span class="s2">&amp;#34; &amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34; | title }}&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">date&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>{{&lt;span class="w"> &lt;/span>&lt;span class="l">.Date }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">hidden&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">comments&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
