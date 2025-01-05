@@ -1,11 +1,14 @@
 # Configure main menu and social menu
-#[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
-#[main.params]
-#icon = "home"
-#newtab = true
+# see: https://stack.jimmycai.com/config/menu
+[[main]]
+identifier = "about"
+name = "About"
+url = "https://ryankert.cc"
+weight = 2
+
+[main.params]
+icon = "user"
+newtab = true
 
 [[social]]
 identifier = "github"
@@ -16,9 +19,9 @@ url = "https://github.com/ryankert01"
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com/ryankert01"
+identifier = "linkedin"
+name = "linkedin"
+url = "https://www.linkedin.com/in/ryankert01/"
 
 [social.params]
-icon = "brand-twitter"
+icon = "brand-linkedin"
