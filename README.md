@@ -1,5 +1,7 @@
 ## Hugo Theme Stack Starter Template 
 
+build with GitHub Action, deploy with Cloudflare page under `gh-page` branch
+
 ### add a new post
 
 ```bash
