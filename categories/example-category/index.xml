@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Example Category on Ryan Kert</title><link>https://light.ryankert.cc/categories/example-category/</link><description>Recent content in Example Category on Ryan Kert</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Mar 2024 20:45:51 +0800</lastBuildDate><atom:link href="https://light.ryankert.cc/categories/example-category/index.xml" rel="self" type="application/rss+xml"/><item><title>RISC V: Tips and Tricks</title><link>https://light.ryankert.cc/p/risc-v-tips-and-tricks/</link><pubDate>Wed, 27 Mar 2024 20:45:51 +0800</pubDate><guid>https://light.ryankert.cc/p/risc-v-tips-and-tricks/</guid><description>&lt;h2 id="basics">Basics
+&lt;/h2>&lt;h3 id="registers">Registers
+&lt;/h3>&lt;p>&lt;img src="https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM.png"
+width="1562"
+height="1022"
+srcset="https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM_hu_7c15c5fadc45dae7.png 480w, https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM_hu_f8eda009846fead2.png 1024w"
+loading="lazy"
+alt="register conventions"
+class="gallery-image"
+data-flex-grow="152"
+data-flex-basis="366px"
+>&lt;/p>
+&lt;h3 id="pseudo-instructions">Pseudo Instructions
+&lt;/h3>&lt;ul>
+&lt;li>&lt;code>li&lt;/code> is used to load an immediate value into a register.&lt;/li>
+&lt;li>&lt;code>la&lt;/code> is used to load an address into a register. (also can load a label address)&lt;/li>
+&lt;li>&lt;code>mv&lt;/code> is used to move a value from one register to another. (inclusive of addresses)&lt;/li>
+&lt;li>&lt;code>ret&lt;/code> is used to return from a function using the &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;/ul>
+&lt;h3 id="print-the-prompt-and-read-an-integer">Print the prompt and read an integer
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Print the prompt
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">la&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">prompt&lt;/span> &lt;span class="c1"># Load address of the prompt into a0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="c1"># System call for printing string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">ecall&lt;/span> &lt;span class="c1"># Execute the call
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Read an integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span> &lt;span class="c1"># System call for reading an integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">ecall&lt;/span> &lt;span class="c1"># Execute the call, integer is now in a0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Store the integer in another register, e.g., t0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">mv&lt;/span> &lt;span class="no">t0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a0&lt;/span> &lt;span class="c1"># Move the integer from a0 to t0
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="branch-will-not-store-return-addressra">Branch will not store return address(ra)
+&lt;/h2>&lt;p>blt, bge, bltu, bgeu, etc. will not also set the &lt;code>ra&lt;/code> register. If you want to use the return address, you need to save it before the branch instruction. or use labels and &lt;code>jal&lt;/code> instruction.&lt;/p>
+&lt;p>eg. the following code is a function demostrates &lt;code>1&lt;/code> times &lt;code>a2&lt;/code> to &lt;code>a3 + 1&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">li&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1_loop:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">beq&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">times_a2_to_a3_plus_1_end&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">div&lt;/span> &lt;span class="no">t4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">t5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">bge&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">t4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raise_int_max_exceeded&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">mul&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">j&lt;/span> &lt;span class="no">times_a2_to_a3_plus_1_loop&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1_end:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">jr&lt;/span> &lt;span class="no">ra&lt;/span> &lt;span class="c1"># or `ret` alternatively
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">raise_int_max_exceeded:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">la&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">strRaisedIntMaxExceeded&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">ecall&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">jr&lt;/span> &lt;span class="no">t3&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>in line 6, where I invoke the &lt;code>raise_int_max_exceeded&lt;/code> function, I save the return address in &lt;code>t3&lt;/code> register. and in the &lt;code>raise_int_max_exceeded&lt;/code> function, I use &lt;code>jr t3&lt;/code> to return to the caller.&lt;/p>
+&lt;h2 id="difference-between-jal-jalr-j-jr">Difference between &lt;code>jal&lt;/code>, &lt;code>jalr&lt;/code>, &lt;code>j&lt;/code>, &lt;code>jr&lt;/code>
+&lt;/h2>&lt;ul>
+&lt;li>&lt;code>jal&lt;/code> and &lt;code>jalr&lt;/code> is used to jump to a &lt;strong>label&lt;/strong> and save the return address in &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;li>&lt;code>jalr&lt;/code> is used to jump to a &lt;strong>register&lt;/strong> and save the return address in &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;li>&lt;code>j&lt;/code> is used to jump to a &lt;strong>label&lt;/strong>.&lt;/li>
+&lt;li>&lt;code>jr&lt;/code> is used to jump to a &lt;strong>register&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="use-stack-to-save-registers">Use stack to save registers
+&lt;/h2>&lt;p>eg.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="nl">validate_input:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">sw&lt;/span> &lt;span class="no">ra&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="no">sp&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert M &amp;gt; 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blez&lt;/span> &lt;span class="no">s1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_not_natural&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert N &amp;gt;= 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blt&lt;/span> &lt;span class="no">s2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">zero&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_less_than_zero&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert M &amp;gt;= N
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blt&lt;/span> &lt;span class="no">s1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">s2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_M_smaller_than_N&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">lw&lt;/span> &lt;span class="no">ra&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="no">sp&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">ret&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>for more info, visit this blog post: &lt;a class="link" href="" >RISC-V: Use Stack to Store Return Address&lt;/a>&lt;/p></description></item></channel></rss>

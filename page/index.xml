@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Ryan Kert</title><link>https://light.ryankert.cc/page/</link><description>Recent content in Pages on Ryan Kert</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://light.ryankert.cc/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://light.ryankert.cc/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/archives/</guid><description/></item><item><title>Friends' Posts</title><link>https://light.ryankert.cc/friend-posts/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/friend-posts/</guid><description>&lt;div class="posts_friends" markdown="1">&lt;/div>
+&lt;script>
+function createElementcc(elementType, style, link, innerhtml) {
+let elementCreated = document.createElement(elementType);
+if(link)elementCreated.href = link;
+elementCreated.innerHTML = innerhtml;
+if(style)elementCreated.style = style;
+return elementCreated;
+}
+console.log("hello");
+var p_f = document.querySelector('.posts_friends');
+const request = 'https://ryankert01.github.io/rss-friend/sorted.json';
+let d = new Date();
+fetch(request)
+.then(response => response.json())
+.then(json => {
+for(let i = 0; i &lt; json.length; i++) {
+console.log(i);
+console.log(json[i].title);
+let currentItem = document.createElement('div');
+d = new Date(json[i].date);
+let e;
+let monthAppend = d.getMonth()+1;
+monthAppend = monthAppend.toString();
+monthAppend = monthAppend.length &lt; 2 ? "0" + monthAppend : monthAppend;
+let dayAppend = d.getDate();
+dayAppend = dayAppend.toString();
+dayAppend = dayAppend.length &lt; 2 ? "0" + dayAppend : dayAppend;
+let tempAppend = monthAppend + "-" + dayAppend + " ";
+console.log(json[i].title);
+let margin = 10;
+let style = "border-bottom: none; opacity: 65%; margin: ";
+style += margin.toString() + "px";
+e = createElementcc(
+'b',
+style,
+null,
+tempAppend
+);
+console.log(e)
+currentItem.appendChild(e);
+e = createElementcc('a', null, json[i].link, json[i].title);
+e.target = "_blank";
+e.rel = "noopener noreferrer";
+currentItem.appendChild(e);
+console.log(e)
+e = createElementcc('a', "opacity: 75%;", json[i].author.link, json[i].author.name);
+e.classList.add('link');
+e.target = "_blank";
+e.rel = "noopener noreferrer";
+e.classList.add("e-author");
+currentItem.appendChild(e);
+console.log(e)
+p_f.appendChild(currentItem);
+console.log(currentItem);
+}
+})
+console.log(request)
+console.log("hello");
+&lt;/script>
+&lt;style>
+.e-author {
+position: absolute;
+right: 15%;
+}
+@media screen and (max-width: 950px) {
+.e-author {
+position: relative;
+left: 15px
+}
+}
+&lt;/style>
+&lt;p>for how to build one, check out this &lt;a class="link" href="" >post&lt;/a>.&lt;br>
+powered by &lt;a class="link" href="https://github.com/ryankert01/rss-friend" target="_blank" rel="noopener"
+>rss-friend&lt;/a> with ❤️&lt;/p></description></item><item><title>Search</title><link>https://light.ryankert.cc/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/search/</guid><description/></item></channel></rss>

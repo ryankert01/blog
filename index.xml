@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ryan Kert</title><link>https://light.ryankert.cc/</link><description>Recent content on Ryan Kert</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 31 Jan 2025 09:46:50 +0800</lastBuildDate><atom:link href="https://light.ryankert.cc/index.xml" rel="self" type="application/rss+xml"/><item><title>Leverage in Etfs Investment</title><link>https://light.ryankert.cc/p/leverage-in-etfs-investment/</link><pubDate>Fri, 31 Jan 2025 09:46:50 +0800</pubDate><guid>https://light.ryankert.cc/p/leverage-in-etfs-investment/</guid><description>&lt;h2 id="with-carefulness-leverage-etfs-boosts-returns">With carefulness, leverage ETFs boosts returns
+&lt;/h2>&lt;p>Leveraged ETFs can amplify investment returns when used strategically. While higher leverage ratios (2x or 3x) can be risky, a modest 1.25x leverage offers a balanced approach to enhance returns while managing risk.&lt;/p>
+&lt;h2 id="etfs-choice">ETFs choice
+&lt;/h2>&lt;p>For our analysis, we selected two major market-tracking ETFs that offer broad market exposure and high liquidity. The combination of S&amp;amp;P 500 (VOO) and NASDAQ 100 (QQQ) provides diversification across both traditional blue-chip stocks and technology-focused growth companies.&lt;/p>
+&lt;p>&lt;img src="https://light.ryankert.cc/p/leverage-in-etfs-investment/voo&amp;#43;qqq.png"
+width="1200"
+height="800"
+srcset="https://light.ryankert.cc/p/leverage-in-etfs-investment/voo&amp;#43;qqq_hu_a5737a5c091ef988.png 480w, https://light.ryankert.cc/p/leverage-in-etfs-investment/voo&amp;#43;qqq_hu_3280d9a93c39335.png 1024w"
+loading="lazy"
+alt="S&amp;P500(VOO) 50% &amp;#43; NASDAQ100(QQQ) 50%"
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;h2 id="leverage-boost-performance">Leverage boost performance
+&lt;/h2>&lt;p>&lt;img src="https://light.ryankert.cc/p/leverage-in-etfs-investment/portfolio_performance_comparison.png"
+width="1200"
+height="800"
+srcset="https://light.ryankert.cc/p/leverage-in-etfs-investment/portfolio_performance_comparison_hu_151c4f59b5c603e4.png 480w, https://light.ryankert.cc/p/leverage-in-etfs-investment/portfolio_performance_comparison_hu_a8ec7a94ee8b873a.png 1024w"
+loading="lazy"
+alt="Leveraged Portfolio"
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;p>Our analysis compares a base portfolio of VOO (50%) and QQQ (50%) with a 1.25x leveraged version, assuming a 3% borrowing cost. The results reveal interesting insights about the risk-return tradeoff of modest leverage:&lt;/p>
+&lt;h3 id="returns-enhancement">Returns Enhancement
+&lt;/h3>&lt;ul>
+&lt;li>Total return increased significantly from 344.20% to 463.81%&lt;/li>
+&lt;li>Annual return improved from 15.98% to 18.76%, representing a 17.8% increase&lt;/li>
+&lt;li>The power of leverage is evident in the cumulative returns chart, showing consistent outperformance&lt;/li>
+&lt;/ul>
+&lt;h3 id="risk-considerations">Risk Considerations
+&lt;/h3>&lt;ul>
+&lt;li>Annual volatility rose proportionally from 19.43% to 24.29%&lt;/li>
+&lt;li>Maximum drawdown deepened from -31.00% to -37.79%&lt;/li>
+&lt;li>Market sensitivity (Beta) increased from 1.07 to 1.33&lt;/li>
+&lt;li>Risk metrics (VaR 95% and CVaR 95%) showed moderately higher downside risk&lt;/li>
+&lt;/ul>
+&lt;h3 id="risk-adjusted-performance">Risk-Adjusted Performance
+&lt;/h3>&lt;ul>
+&lt;li>Sharpe Ratio remained virtually unchanged (0.7066 vs 0.7061)&lt;/li>
+&lt;li>Sortino Ratio showed slight improvement (0.876 vs 0.875)&lt;/li>
+&lt;li>Information Ratio decreased from 3.07 to 2.02&lt;/li>
+&lt;li>Calmar Ratio experienced minimal decline (0.515 to 0.496)&lt;/li>
+&lt;/ul>
+&lt;h2 id="finding-appropriate-leverage-methods">Finding Appropriate Leverage Methods
+&lt;/h2>&lt;p>Selecting the right leverage method is crucial for portfolio management. Here are the main approaches to obtaining leverage:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Margin Accounts&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Use your existing portfolio as collateral&lt;/li>
+&lt;li>Typically offers competitive interest rates&lt;/li>
+&lt;li>Provides flexibility in leverage amount&lt;/li>
+&lt;li>Subject to margin calls during market downturns&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Securities-Based Lines of Credit (SBLOC)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Uses your investment portfolio as collateral&lt;/li>
+&lt;li>Often offers lower interest rates than margin accounts&lt;/li>
+&lt;li>No set repayment schedule&lt;/li>
+&lt;li>More stable than margin accounts during market volatility&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Home Equity Lines of Credit (HELOC)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Uses home equity as collateral&lt;/li>
+&lt;li>Generally offers lower interest rates than unsecured loans&lt;/li>
+&lt;li>Tax-deductible interest in some jurisdictions&lt;/li>
+&lt;li>Longer repayment terms available&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Leveraged ETFs and ETNs&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Built-in leverage without borrowing&lt;/li>
+&lt;li>No margin calls&lt;/li>
+&lt;li>Daily rebalancing may cause tracking error&lt;/li>
+&lt;li>Available in various leverage ratios (2x, 3x)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Options Strategies&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>LEAPS (Long-term Equity AnticiPation Securities)&lt;/li>
+&lt;li>Deep-in-the-money calls&lt;/li>
+&lt;li>Synthetic long positions&lt;/li>
+&lt;li>Requires options knowledge and monitoring&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Futures Contracts&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>High leverage potential&lt;/li>
+&lt;li>Standardized contracts&lt;/li>
+&lt;li>Lower transaction costs&lt;/li>
+&lt;li>Requires futures market expertise&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Portfolio Loans&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Available through some brokers and banks&lt;/li>
+&lt;li>Can use multiple asset types as collateral&lt;/li>
+&lt;li>Flexible terms and usage&lt;/li>
+&lt;li>May offer better rates than traditional loans&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Box Spreads Financing&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Advanced options strategy for borrowing&lt;/li>
+&lt;li>Often provides very competitive rates&lt;/li>
+&lt;li>Requires options approval level&lt;/li>
+&lt;li>Limited to certain account types&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>Key Considerations When Choosing a Method:&lt;/p>
+&lt;ul>
+&lt;li>Interest rates and borrowing costs&lt;/li>
+&lt;li>Flexibility needs&lt;/li>
+&lt;li>Risk tolerance&lt;/li>
+&lt;li>Tax implications&lt;/li>
+&lt;li>Market conditions&lt;/li>
+&lt;li>Personal expertise level&lt;/li>
+&lt;li>Account requirements&lt;/li>
+&lt;li>Maintenance and monitoring needs&lt;/li>
+&lt;/ul>
+&lt;p>Each method has unique advantages and risks. It&amp;rsquo;s often beneficial to:&lt;/p>
+&lt;ol>
+&lt;li>Start with simpler methods&lt;/li>
+&lt;li>Understand all associated costs&lt;/li>
+&lt;li>Have a clear risk management plan&lt;/li>
+&lt;li>Consider using multiple methods to diversify risk&lt;/li>
+&lt;li>Regular review and rebalancing as needed&lt;/li>
+&lt;/ol>
+&lt;h2 id="conclusions">Conclusions
+&lt;/h2>&lt;p>Our analysis demonstrates that modest leverage (1.25x) in ETF investing can be an effective tool for enhancing portfolio returns when implemented thoughtfully. Key takeaways include:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Performance Enhancement&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>The 1.25x leveraged portfolio achieved significantly higher total returns (463.81% vs 344.20%)&lt;/li>
+&lt;li>Annual returns improved by 17.8% while maintaining similar risk-adjusted metrics&lt;/li>
+&lt;li>The benefits of leverage were consistent across different market conditions&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Risk Management&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Moderate leverage resulted in proportional increase in volatility&lt;/li>
+&lt;li>Risk metrics remained manageable with 1.25x leverage&lt;/li>
+&lt;li>The Sharpe and Sortino ratios stayed nearly unchanged, indicating efficient risk-adjusted returns&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Implementation Strategy&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Multiple leverage methods are available, each with distinct advantages&lt;/li>
+&lt;li>The choice of leverage method should align with individual circumstances&lt;/li>
+&lt;li>Regular monitoring and rebalancing are essential&lt;/li>
+&lt;li>Starting with conservative leverage ratios is recommended&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Best Practices&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Maintain adequate risk controls&lt;/li>
+&lt;li>Diversify leverage sources when possible&lt;/li>
+&lt;li>Keep borrowing costs low&lt;/li>
+&lt;li>Have a clear exit strategy&lt;/li>
+&lt;li>Regular portfolio review and rebalancing&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>While leverage can amplify returns, it requires careful consideration, proper risk management, and ongoing monitoring. For investors willing to accept additional complexity and risk, modest leverage can be a valuable tool in portfolio management.&lt;/p>
+&lt;h2 id="appendix">Appendix
+&lt;/h2>&lt;h3 id="a1-code-for-backtracking-leveraged-portfolio">A.1 Code for backtracking Leveraged Portfolio
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt"> 10
+&lt;/span>&lt;span class="lnt"> 11
+&lt;/span>&lt;span class="lnt"> 12
+&lt;/span>&lt;span class="lnt"> 13
+&lt;/span>&lt;span class="lnt"> 14
+&lt;/span>&lt;span class="lnt"> 15
+&lt;/span>&lt;span class="lnt"> 16
+&lt;/span>&lt;span class="lnt"> 17
+&lt;/span>&lt;span class="lnt"> 18
+&lt;/span>&lt;span class="lnt"> 19
+&lt;/span>&lt;span class="lnt"> 20
+&lt;/span>&lt;span class="lnt"> 21
+&lt;/span>&lt;span class="lnt"> 22
+&lt;/span>&lt;span class="lnt"> 23
+&lt;/span>&lt;span class="lnt"> 24
+&lt;/span>&lt;span class="lnt"> 25
+&lt;/span>&lt;span class="lnt"> 26
+&lt;/span>&lt;span class="lnt"> 27
+&lt;/span>&lt;span class="lnt"> 28
+&lt;/span>&lt;span class="lnt"> 29
+&lt;/span>&lt;span class="lnt"> 30
+&lt;/span>&lt;span class="lnt"> 31
+&lt;/span>&lt;span class="lnt"> 32
+&lt;/span>&lt;span class="lnt"> 33
+&lt;/span>&lt;span class="lnt"> 34
+&lt;/span>&lt;span class="lnt"> 35
+&lt;/span>&lt;span class="lnt"> 36
+&lt;/span>&lt;span class="lnt"> 37
+&lt;/span>&lt;span class="lnt"> 38
+&lt;/span>&lt;span class="lnt"> 39
+&lt;/span>&lt;span class="lnt"> 40
+&lt;/span>&lt;span class="lnt"> 41
+&lt;/span>&lt;span class="lnt"> 42
+&lt;/span>&lt;span class="lnt"> 43
+&lt;/span>&lt;span class="lnt"> 44
+&lt;/span>&lt;span class="lnt"> 45
+&lt;/span>&lt;span class="lnt"> 46
+&lt;/span>&lt;span class="lnt"> 47
+&lt;/span>&lt;span class="lnt"> 48
+&lt;/span>&lt;span class="lnt"> 49
+&lt;/span>&lt;span class="lnt"> 50
+&lt;/span>&lt;span class="lnt"> 51
+&lt;/span>&lt;span class="lnt"> 52
+&lt;/span>&lt;span class="lnt"> 53
+&lt;/span>&lt;span class="lnt"> 54
+&lt;/span>&lt;span class="lnt"> 55
+&lt;/span>&lt;span class="lnt"> 56
+&lt;/span>&lt;span class="lnt"> 57
+&lt;/span>&lt;span class="lnt"> 58
+&lt;/span>&lt;span class="lnt"> 59
+&lt;/span>&lt;span class="lnt"> 60
+&lt;/span>&lt;span class="lnt"> 61
+&lt;/span>&lt;span class="lnt"> 62
+&lt;/span>&lt;span class="lnt"> 63
+&lt;/span>&lt;span class="lnt"> 64
+&lt;/span>&lt;span class="lnt"> 65
+&lt;/span>&lt;span class="lnt"> 66
+&lt;/span>&lt;span class="lnt"> 67
+&lt;/span>&lt;span class="lnt"> 68
+&lt;/span>&lt;span class="lnt"> 69
+&lt;/span>&lt;span class="lnt"> 70
+&lt;/span>&lt;span class="lnt"> 71
+&lt;/span>&lt;span class="lnt"> 72
+&lt;/span>&lt;span class="lnt"> 73
+&lt;/span>&lt;span class="lnt"> 74
+&lt;/span>&lt;span class="lnt"> 75
+&lt;/span>&lt;span class="lnt"> 76
+&lt;/span>&lt;span class="lnt"> 77
+&lt;/span>&lt;span class="lnt"> 78
+&lt;/span>&lt;span class="lnt"> 79
+&lt;/span>&lt;span class="lnt"> 80
+&lt;/span>&lt;span class="lnt"> 81
+&lt;/span>&lt;span class="lnt"> 82
+&lt;/span>&lt;span class="lnt"> 83
+&lt;/span>&lt;span class="lnt"> 84
+&lt;/span>&lt;span class="lnt"> 85
+&lt;/span>&lt;span class="lnt"> 86
+&lt;/span>&lt;span class="lnt"> 87
+&lt;/span>&lt;span class="lnt"> 88
+&lt;/span>&lt;span class="lnt"> 89
+&lt;/span>&lt;span class="lnt"> 90
+&lt;/span>&lt;span class="lnt"> 91
+&lt;/span>&lt;span class="lnt"> 92
+&lt;/span>&lt;span class="lnt"> 93
+&lt;/span>&lt;span class="lnt"> 94
+&lt;/span>&lt;span class="lnt"> 95
+&lt;/span>&lt;span class="lnt"> 96
+&lt;/span>&lt;span class="lnt"> 97
+&lt;/span>&lt;span class="lnt"> 98
+&lt;/span>&lt;span class="lnt"> 99
+&lt;/span>&lt;span class="lnt">100
+&lt;/span>&lt;span class="lnt">101
+&lt;/span>&lt;span class="lnt">102
+&lt;/span>&lt;span class="lnt">103
+&lt;/span>&lt;span class="lnt">104
+&lt;/span>&lt;span class="lnt">105
+&lt;/span>&lt;span class="lnt">106
+&lt;/span>&lt;span class="lnt">107
+&lt;/span>&lt;span class="lnt">108
+&lt;/span>&lt;span class="lnt">109
+&lt;/span>&lt;span class="lnt">110
+&lt;/span>&lt;span class="lnt">111
+&lt;/span>&lt;span class="lnt">112
+&lt;/span>&lt;span class="lnt">113
+&lt;/span>&lt;span class="lnt">114
+&lt;/span>&lt;span class="lnt">115
+&lt;/span>&lt;span class="lnt">116
+&lt;/span>&lt;span class="lnt">117
+&lt;/span>&lt;span class="lnt">118
+&lt;/span>&lt;span class="lnt">119
+&lt;/span>&lt;span class="lnt">120
+&lt;/span>&lt;span class="lnt">121
+&lt;/span>&lt;span class="lnt">122
+&lt;/span>&lt;span class="lnt">123
+&lt;/span>&lt;span class="lnt">124
+&lt;/span>&lt;span class="lnt">125
+&lt;/span>&lt;span class="lnt">126
+&lt;/span>&lt;span class="lnt">127
+&lt;/span>&lt;span class="lnt">128
+&lt;/span>&lt;span class="lnt">129
+&lt;/span>&lt;span class="lnt">130
+&lt;/span>&lt;span class="lnt">131
+&lt;/span>&lt;span class="lnt">132
+&lt;/span>&lt;span class="lnt">133
+&lt;/span>&lt;span class="lnt">134
+&lt;/span>&lt;span class="lnt">135
+&lt;/span>&lt;span class="lnt">136
+&lt;/span>&lt;span class="lnt">137
+&lt;/span>&lt;span class="lnt">138
+&lt;/span>&lt;span class="lnt">139
+&lt;/span>&lt;span class="lnt">140
+&lt;/span>&lt;span class="lnt">141
+&lt;/span>&lt;span class="lnt">142
+&lt;/span>&lt;span class="lnt">143
+&lt;/span>&lt;span class="lnt">144
+&lt;/span>&lt;span class="lnt">145
+&lt;/span>&lt;span class="lnt">146
+&lt;/span>&lt;span class="lnt">147
+&lt;/span>&lt;span class="lnt">148
+&lt;/span>&lt;span class="lnt">149
+&lt;/span>&lt;span class="lnt">150
+&lt;/span>&lt;span class="lnt">151
+&lt;/span>&lt;span class="lnt">152
+&lt;/span>&lt;span class="lnt">153
+&lt;/span>&lt;span class="lnt">154
+&lt;/span>&lt;span class="lnt">155
+&lt;/span>&lt;span class="lnt">156
+&lt;/span>&lt;span class="lnt">157
+&lt;/span>&lt;span class="lnt">158
+&lt;/span>&lt;span class="lnt">159
+&lt;/span>&lt;span class="lnt">160
+&lt;/span>&lt;span class="lnt">161
+&lt;/span>&lt;span class="lnt">162
+&lt;/span>&lt;span class="lnt">163
+&lt;/span>&lt;span class="lnt">164
+&lt;/span>&lt;span class="lnt">165
+&lt;/span>&lt;span class="lnt">166
+&lt;/span>&lt;span class="lnt">167
+&lt;/span>&lt;span class="lnt">168
+&lt;/span>&lt;span class="lnt">169
+&lt;/span>&lt;span class="lnt">170
+&lt;/span>&lt;span class="lnt">171
+&lt;/span>&lt;span class="lnt">172
+&lt;/span>&lt;span class="lnt">173
+&lt;/span>&lt;span class="lnt">174
+&lt;/span>&lt;span class="lnt">175
+&lt;/span>&lt;span class="lnt">176
+&lt;/span>&lt;span class="lnt">177
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">yfinance&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">yf&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pandas&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">pd&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">numpy&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">np&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">datetime&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">datetime&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">timedelta&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">matplotlib.pyplot&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">plt&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">scipy&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">stats&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">fetch_data&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">tickers&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">start_date&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end_date&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Fetch historical data for given tickers&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">DataFrame&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">ticker&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">tickers&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">df&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">yf&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">download&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ticker&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">start&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">start_date&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">end_date&lt;/span>&lt;span class="p">)[&lt;/span>&lt;span class="s1">&amp;#39;Adj Close&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ticker&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">df&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">calculate_portfolio_returns&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">weights&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Calculate portfolio returns based on given weights&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate daily returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pct_change&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate portfolio returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">portfolio_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">returns&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">weights&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sum&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">axis&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">portfolio_returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">calculate_leveraged_returns&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">returns&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">leverage&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">1.25&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">borrowing_cost_annual&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.03&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Calculate leveraged returns with borrowing costs&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Convert annual borrowing cost to daily&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">daily_borrowing_cost&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">borrowing_cost_annual&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">252&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate leveraged returns with borrowing cost&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">leveraged_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">leverage&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">leverage&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">daily_borrowing_cost&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">leveraged_returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">calculate_metrics&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">returns&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">risk_free_rate&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mf">0.03&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Calculate various performance metrics&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Convert to numpy array and remove NaN&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">returns_clean&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">dropna&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Basic metrics&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Total Return&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">prod&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Annual Return&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">prod&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">252&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">returns_clean&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Daily Volatility&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Annual Volatility&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">252&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Sharpe Ratio&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">excess_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns_clean&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">risk_free_rate&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">252&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Sharpe Ratio&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">252&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">excess_returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">mean&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Sortino Ratio&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">downside_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">returns_clean&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">downside_std&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">downside_returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Sortino Ratio&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">252&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">excess_returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">mean&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">downside_std&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Maximum Drawdown&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cum_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">cumprod&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rolling_max&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cum_returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">expanding&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">max&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">drawdowns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cum_returns&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">rolling_max&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Maximum Drawdown&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">drawdowns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">min&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calmar Ratio&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Calmar Ratio&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Annual Return&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="nb">abs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Maximum Drawdown&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Value at Risk (VaR) - 95% confidence&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;VaR 95%&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">percentile&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">returns_clean&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Conditional VaR (CVaR/Expected Shortfall)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;CVaR 95%&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">returns_clean&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;VaR 95%&amp;#39;&lt;/span>&lt;span class="p">]]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">mean&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Beta (using S&amp;amp;P 500 as market proxy)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sp500&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">yf&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">download&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;^GSPC&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">start&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">returns_clean&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">returns_clean&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">])[&lt;/span>&lt;span class="s1">&amp;#39;Adj Close&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pct_change&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Align dates between portfolio returns and market returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">aligned_data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">concat&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="n">returns_clean&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sp500&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">axis&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">dropna&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">slope&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">_&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">r_value&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">_&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">_&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">stats&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">linregress&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">aligned_data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">iloc&lt;/span>&lt;span class="p">[:,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">aligned_data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">iloc&lt;/span>&lt;span class="p">[:,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Beta&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">slope&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;R-squared&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">r_value&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Information Ratio&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">tracking_error&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">returns_clean&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">aligned_data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">iloc&lt;/span>&lt;span class="p">[:,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">])&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">std&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">np&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">252&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Information Ratio&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Annual Return&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mf">0.03&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">tracking_error&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Kurtosis and Skewness&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Kurtosis&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">kurtosis&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;Skewness&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">returns_clean&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">skew&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">metrics&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">plot_portfolio_performance&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">returns&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;Plot cumulative returns and drawdown&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cumulative_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">returns&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">cumprod&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">figure&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">figsize&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">12&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Plot cumulative returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">subplot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cumulative_returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cumulative_returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Cumulative Portfolio Returns&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">grid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Plot drawdown&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">subplot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rolling_max&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cumulative_returns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">expanding&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">max&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">drawdowns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cumulative_returns&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">rolling_max&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">drawdowns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">drawdowns&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Portfolio Drawdown&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">grid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">tight_layout&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">savefig&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;portfolio_performance.png&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Set parameters&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">tickers&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;VOO&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;QQQ&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">weights&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mf">0.5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">0.5&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">start_date&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;2015-01-01&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">end_date&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">datetime&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">now&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">strftime&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;%Y-%m-&lt;/span>&lt;span class="si">%d&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Fetch data&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Fetching data...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">fetch_data&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">tickers&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">start_date&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end_date&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate portfolio returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">Calculating portfolio returns...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">portfolio_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">calculate_portfolio_returns&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">weights&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate leveraged portfolio returns&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">leveraged_returns&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">calculate_leveraged_returns&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">portfolio_returns&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Calculate metrics for both portfolios&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">Calculating performance metrics...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics_base&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">calculate_metrics&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">portfolio_returns&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">metrics_leveraged&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">calculate_metrics&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">leveraged_returns&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Print metrics comparison&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">Portfolio Performance Metrics Comparison:&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;-&amp;#34;&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">70&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="s1">&amp;#39;Metric&amp;#39;&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">&amp;lt;25&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2"> &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="s1">&amp;#39;Base Portfolio&amp;#39;&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">&amp;gt;20&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2"> &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="s1">&amp;#39;1.25x Leveraged&amp;#39;&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">&amp;gt;20&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;-&amp;#34;&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">70&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">metric&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">metrics_base&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">keys&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">base_value&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">metrics_base&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">metric&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">lev_value&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">metrics_leveraged&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">metric&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">metric&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">&amp;lt;25&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2"> &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">base_value&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">&amp;gt;20.4f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2"> &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">lev_value&lt;/span>&lt;span class="si">:&lt;/span>&lt;span class="s2">&amp;gt;20.4f&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Plot performance comparison&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s2">Generating performance plots...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">figure&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">figsize&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">12&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Plot cumulative returns comparison&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">subplot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cum_returns_base&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">portfolio_returns&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">cumprod&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cum_returns_lev&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">leveraged_returns&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">cumprod&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cum_returns_base&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cum_returns_base&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">label&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;Base Portfolio&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cum_returns_lev&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cum_returns_lev&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">label&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;1.25x Leveraged&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Cumulative Portfolio Returns Comparison&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">grid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">legend&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># Plot drawdown comparison&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">subplot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rolling_max_base&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cum_returns_base&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">expanding&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">max&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rolling_max_lev&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cum_returns_lev&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">expanding&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">max&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">drawdowns_base&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cum_returns_base&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">rolling_max_base&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">drawdowns_lev&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cum_returns_lev&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">rolling_max_lev&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">drawdowns_base&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">drawdowns_base&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">label&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;Base Portfolio&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">drawdowns_lev&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">index&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">drawdowns_lev&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">values&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">label&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;1.25x Leveraged&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Portfolio Drawdown Comparison&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">grid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">legend&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">tight_layout&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">savefig&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;portfolio_performance_comparison.png&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">plt&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;__main__&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Unexpected TLE on Leetcode 2641. Cousins in Binary Tree II</title><link>https://light.ryankert.cc/p/unexpected-tle-on-leetcode-2641.-cousins-in-binary-tree-ii/</link><pubDate>Wed, 23 Oct 2024 12:00:51 +0800</pubDate><guid>https://light.ryankert.cc/p/unexpected-tle-on-leetcode-2641.-cousins-in-binary-tree-ii/</guid><description>&lt;p>Today I was solving &lt;a class="link" href="https://leetcode.com/problems/cousins-in-binary-tree-ii/" target="_blank" rel="noopener"
+>Leetcode 2641. Cousins in Binary Tree II&lt;/a>, a medium level problem.&lt;/p>
+&lt;p>The problem is about finding the cousins of a node in a binary tree. The cousins of a node are the nodes that are at the same level as the node but have different parents.&lt;/p>
+&lt;p>The first solution that came to my mind was a 2-pass DFS solution, which is &lt;code>O(n)&lt;/code> in time complexity. Pretty fast right?&lt;/p>
+&lt;p>Well, I got a TLE.&lt;/p>
+&lt;p>I calculate the time each dfs function took:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="n">vector&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">levels&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">TreeNode&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="nf">replaceValueInTree&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">TreeNode&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Measure dfsadd time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">auto&lt;/span> &lt;span class="n">start_dfsadd&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">chrono&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">high_resolution_clock&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">now&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfsadd&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">auto&lt;/span> &lt;span class="n">end_dfsadd&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">chrono&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">high_resolution_clock&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">now&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">chrono&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">duration&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">milli&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">elapsed_dfsadd&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">end_dfsadd&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">start_dfsadd&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;dfsadd call took: &amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">elapsed_dfsadd&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34; ms&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Measure dfs time
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">auto&lt;/span> &lt;span class="n">start_dfs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">chrono&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">high_resolution_clock&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">now&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">auto&lt;/span> &lt;span class="n">end_dfs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">chrono&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">high_resolution_clock&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">now&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">chrono&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">duration&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">milli&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">elapsed_dfs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">end_dfs&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">start_dfs&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;dfs call took: &amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">elapsed_dfs&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34; ms&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">TreeNode&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">level&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">sibling&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">return&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">sibr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sibl&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">sibr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">sibl&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sibr&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sibl&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">val&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">levels&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">level&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">val&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">sibling&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">dfsadd&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">TreeNode&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="n">level&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">return&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">levels&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">level&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">levels&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">push_back&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">levels&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">level&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">val&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfsadd&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">left&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dfsadd&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">root&lt;/span>&lt;span class="o">-&amp;gt;&lt;/span>&lt;span class="n">right&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">level&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And get:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dfsadd call took: 1252.54 ms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dfs call took: 2.32722 ms
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Running some profiling, I found out that the TLE is due to the &lt;code>push_back&lt;/code> operation in C++. We often overlook its cost, but it is actually &lt;code>O(n)&lt;/code> in the worst case, while we expect it to be &lt;code>O(logn)&lt;/code> in average.&lt;/p>
+&lt;p>Initialize a vector in the first place&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">&lt;span class="gi">+ levels.assign(1e5+1, 0);
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>and delete the &lt;code>push_back&lt;/code> operation(don&amp;rsquo;t try to save memory in this case) solve the problem.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">&lt;span class="gd">- if (levels.size() &amp;lt; level+1)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gd">- levels.push_back(0);
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Now it runs blazingly fast with only 4ms.&lt;/p>
+&lt;p>That is why we should absolutely care about the time complexity of each operation in our code. More importantly, we should be aware that some operations that we deem to be &lt;code>O(logn)&lt;/code> might not be. It varies from each scenario.&lt;/p></description></item><item><title>Apache Yunikorn 的 Preemption 機制</title><link>https://light.ryankert.cc/p/apache-yunikorn-%E7%9A%84-preemption-%E6%A9%9F%E5%88%B6/</link><pubDate>Tue, 17 Sep 2024 11:42:24 +0800</pubDate><guid>https://light.ryankert.cc/p/apache-yunikorn-%E7%9A%84-preemption-%E6%A9%9F%E5%88%B6/</guid><description>&lt;h2 id="目的和功能">目的和功能
+&lt;/h2>&lt;p>YuniKorn 中的預佔機制允許高優先級任務通過預佔低優先級任務來動態重新分配資源，確保關鍵工作負載獲得必要的資源。這種主動機制維持系統穩定性和公平性，並與 Kubernetes 的優先級類別和 YuniKorn 的層級佇列系統整合。&lt;/p>
+&lt;h2 id="預佔類型preemption-type">預佔類型(Preemption type)
+&lt;/h2>&lt;p>YuniKorn 提供兩種預佔類型：&lt;/p>
+&lt;ol>
+&lt;li>通用預佔：基於層級佇列模型，允許 Pod 選擇不運行。&lt;/li>
+&lt;li>DaemonSet 預佔：確保必須在特定節點上運行的 Pod 能夠運行。&lt;/li>
+&lt;/ol>
+&lt;h2 id="主要特點">主要特點
+&lt;/h2>&lt;ul>
+&lt;li>延遲觸發：預佔在指定延遲後觸發，可通過&lt;code>preemption.delay&lt;/code>屬性配置。&lt;/li>
+&lt;li>層級佇列模型：預佔確保每個佇列的資源使用達到至少保證的資源量。&lt;/li>
+&lt;li>預佔法則：YuniKorn 實施七條預佔法則，以防止預佔風暴或循環。（下面會說明）&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置">配置
+&lt;/h2>&lt;ol>
+&lt;li>
+&lt;p>佇列配置：可以在佇列級別使用&lt;code>preemption.policy&lt;/code>和&lt;code>preemption.delay&lt;/code>等屬性配置預佔。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pod 級別配置：Pod 可以使用&lt;code>yunikorn.apache.org/allow-preemption&lt;/code>註釋選擇不被預佔。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>優先級類別：YuniKorn 與 Kubernetes 的 PriorityClasses 整合以進行預佔。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="預佔法則preemption-rules">預佔法則(Preemption Rules)
+&lt;/h2>&lt;p>YuniKorn 遵循七條預佔法則，以確保公平和高效的資源分配：&lt;/p>
+&lt;ol>
+&lt;li>預佔策略是強烈建議，而非保證。&lt;/li>
+&lt;li>預佔不能使佇列低於其保證容量。&lt;/li>
+&lt;li>任務不能預佔同一應用程序中的其他任務。&lt;/li>
+&lt;li>只有當佇列低於保證容量時，任務才會觸發預佔。&lt;/li>
+&lt;li>只有當佇列超過保證容量時，任務才會被預佔。&lt;/li>
+&lt;li>任務只能預佔優先級較低或相等的任務。&lt;/li>
+&lt;li>任務不能預佔其預佔圍欄之外的任務。&lt;/li>
+&lt;/ol>
+&lt;h2 id="預佔圍欄preemption-fencing">預佔圍欄(Preemption fencing)
+&lt;/h2>&lt;p>YuniKorn 引入了預佔圍欄(Preemption fencing)的概念，允許將預佔範圍限制在某些佇列中。這確保特定佇列（及其子佇列）的優先級在內部評估，防止在多租戶環境中進行跨租戶預佔。&lt;/p>
+&lt;p>通過實施這些預佔功能，YuniKorn 為複雜的 Kubernetes 環境提供了靈活而強大的調度解決方案，實現了跨各種工作負載和租戶的高效資源分配和優先級排序。&lt;/p></description></item><item><title>RISC V: Tips and Tricks</title><link>https://light.ryankert.cc/p/risc-v-tips-and-tricks/</link><pubDate>Wed, 27 Mar 2024 20:45:51 +0800</pubDate><guid>https://light.ryankert.cc/p/risc-v-tips-and-tricks/</guid><description>&lt;h2 id="basics">Basics
+&lt;/h2>&lt;h3 id="registers">Registers
+&lt;/h3>&lt;p>&lt;img src="https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM.png"
+width="1562"
+height="1022"
+srcset="https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM_hu_7c15c5fadc45dae7.png 480w, https://light.ryankert.cc/p/risc-v-tips-and-tricks/Screenshot%202024-03-27%20at%2011.39.36%E2%80%AFPM_hu_f8eda009846fead2.png 1024w"
+loading="lazy"
+alt="register conventions"
+class="gallery-image"
+data-flex-grow="152"
+data-flex-basis="366px"
+>&lt;/p>
+&lt;h3 id="pseudo-instructions">Pseudo Instructions
+&lt;/h3>&lt;ul>
+&lt;li>&lt;code>li&lt;/code> is used to load an immediate value into a register.&lt;/li>
+&lt;li>&lt;code>la&lt;/code> is used to load an address into a register. (also can load a label address)&lt;/li>
+&lt;li>&lt;code>mv&lt;/code> is used to move a value from one register to another. (inclusive of addresses)&lt;/li>
+&lt;li>&lt;code>ret&lt;/code> is used to return from a function using the &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;/ul>
+&lt;h3 id="print-the-prompt-and-read-an-integer">Print the prompt and read an integer
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Print the prompt
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">la&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">prompt&lt;/span> &lt;span class="c1"># Load address of the prompt into a0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span> &lt;span class="c1"># System call for printing string
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">ecall&lt;/span> &lt;span class="c1"># Execute the call
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Read an integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span> &lt;span class="c1"># System call for reading an integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">ecall&lt;/span> &lt;span class="c1"># Execute the call, integer is now in a0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Store the integer in another register, e.g., t0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nf">mv&lt;/span> &lt;span class="no">t0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a0&lt;/span> &lt;span class="c1"># Move the integer from a0 to t0
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="branch-will-not-store-return-addressra">Branch will not store return address(ra)
+&lt;/h2>&lt;p>blt, bge, bltu, bgeu, etc. will not also set the &lt;code>ra&lt;/code> register. If you want to use the return address, you need to save it before the branch instruction. or use labels and &lt;code>jal&lt;/code> instruction.&lt;/p>
+&lt;p>eg. the following code is a function demostrates &lt;code>1&lt;/code> times &lt;code>a2&lt;/code> to &lt;code>a3 + 1&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">li&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1_loop:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">beq&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">times_a2_to_a3_plus_1_end&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">div&lt;/span> &lt;span class="no">t4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">t5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">bge&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">t4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raise_int_max_exceeded&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">mul&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">a2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">j&lt;/span> &lt;span class="no">times_a2_to_a3_plus_1_loop&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">times_a2_to_a3_plus_1_end:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">jr&lt;/span> &lt;span class="no">ra&lt;/span> &lt;span class="c1"># or `ret` alternatively
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nl">raise_int_max_exceeded:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">la&lt;/span> &lt;span class="no">a0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">strRaisedIntMaxExceeded&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">li&lt;/span> &lt;span class="no">a7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">ecall&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">jr&lt;/span> &lt;span class="no">t3&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>in line 6, where I invoke the &lt;code>raise_int_max_exceeded&lt;/code> function, I save the return address in &lt;code>t3&lt;/code> register. and in the &lt;code>raise_int_max_exceeded&lt;/code> function, I use &lt;code>jr t3&lt;/code> to return to the caller.&lt;/p>
+&lt;h2 id="difference-between-jal-jalr-j-jr">Difference between &lt;code>jal&lt;/code>, &lt;code>jalr&lt;/code>, &lt;code>j&lt;/code>, &lt;code>jr&lt;/code>
+&lt;/h2>&lt;ul>
+&lt;li>&lt;code>jal&lt;/code> and &lt;code>jalr&lt;/code> is used to jump to a &lt;strong>label&lt;/strong> and save the return address in &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;li>&lt;code>jalr&lt;/code> is used to jump to a &lt;strong>register&lt;/strong> and save the return address in &lt;code>ra&lt;/code> register.&lt;/li>
+&lt;li>&lt;code>j&lt;/code> is used to jump to a &lt;strong>label&lt;/strong>.&lt;/li>
+&lt;li>&lt;code>jr&lt;/code> is used to jump to a &lt;strong>register&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="use-stack-to-save-registers">Use stack to save registers
+&lt;/h2>&lt;p>eg.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-asm" data-lang="asm">&lt;span class="line">&lt;span class="cl">&lt;span class="nl">validate_input:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">sw&lt;/span> &lt;span class="no">ra&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="no">sp&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert M &amp;gt; 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blez&lt;/span> &lt;span class="no">s1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_not_natural&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert N &amp;gt;= 0
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blt&lt;/span> &lt;span class="no">s2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">zero&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_less_than_zero&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># assert M &amp;gt;= N
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nf">blt&lt;/span> &lt;span class="no">s1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">s2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">raised_M_smaller_than_N&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">lw&lt;/span> &lt;span class="no">ra&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="no">sp&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">addi&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="no">sp&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">ret&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>for more info, visit this blog post: &lt;a class="link" href="" >RISC-V: Use Stack to Store Return Address&lt;/a>&lt;/p></description></item><item><title>RISC-V: Use Stack to Store Return Address</title><link>https://light.ryankert.cc/p/risc-v-use-stack-to-store-return-address/</link><pubDate>Wed, 27 Mar 2024 17:56:44 +0800</pubDate><guid>https://light.ryankert.cc/p/risc-v-use-stack-to-store-return-address/</guid><description>&lt;h2 id="intro">Intro
+&lt;/h2>&lt;p>In RISC-V, the return address is stored in the &lt;code>ra&lt;/code> register. However, in some cases, you may want to use the stack to store the return address. This can be useful when you need to save the return address before calling a function and restore it after the function returns.&lt;/p>
+&lt;h2 id="best-practice">Best Practice
+&lt;/h2>&lt;p>To use the stack to store the return address in RISC-V, you can follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Push the return address onto the stack before calling the function.&lt;/li>
+&lt;li>Call the function.&lt;/li>
+&lt;li>Pop the return address from the stack after the function returns.&lt;/li>
+&lt;/ol>
+&lt;p>Here is an example of how to use the stack to store the return address in RISC-V:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">.section .text
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.global _start
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">_start:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Push the return address onto the stack
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addi sp, sp, -4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sw ra, 0(sp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Call the function
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> jal function
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Pop the return address from the stack
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> lw ra, 0(sp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addi sp, sp, 4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Exit the program
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> li a7, 93
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> li a0, 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ecall
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Function body
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ret
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Write a Shell Script to Automate Create and Delete Post on Hugo</title><link>https://light.ryankert.cc/p/write-a-shell-script-to-automate-create-and-delete-post-on-hugo/</link><pubDate>Wed, 27 Mar 2024 12:22:20 +0800</pubDate><guid>https://light.ryankert.cc/p/write-a-shell-script-to-automate-create-and-delete-post-on-hugo/</guid><description>&lt;h3 id="the-script-overview">The Script Overview
+&lt;/h3>&lt;p>The script provided allows for easy creation and deletion of blog posts with Hugo, a popular static site generator. By passing different flags and the title of your blog post as arguments, you can quickly manage your content without directly interacting with the file system or Hugo commands.&lt;/p>
+&lt;h3 id="usage">Usage
+&lt;/h3>&lt;p>To use this script, you would typically invoke it from the command line with the appropriate flags and arguments. For example, to create a post titled &amp;ldquo;My First Blog Post,&amp;rdquo; you would run:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./post.sh -c blog-post
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And to delete a post with the same title, you would use:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">./post.sh -d blog-post
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="the-script">The Script
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="c1">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="nb">test&lt;/span> &lt;span class="nv">$#&lt;/span> -gt 0&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> in
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h&lt;span class="p">|&lt;/span>--help&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Usage: &lt;/span>&lt;span class="nv">$package&lt;/span>&lt;span class="s2"> [options] application [arguments]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34; &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Options:&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-h, --help Show brief help&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-c, --create Create a new post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;-d, --delete Delete an existing post&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -c&lt;span class="p">|&lt;/span>--create&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> -n &lt;span class="nv">$1&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;creating post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2">...&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hugo new content/post/&lt;span class="nv">$1&lt;/span>/index.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2"> created.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;no post name specified&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -d&lt;span class="p">|&lt;/span>--delete&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> -n &lt;span class="nv">$1&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> rm -r content/post/&lt;span class="nv">$1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;post &lt;/span>&lt;span class="nv">$1&lt;/span>&lt;span class="s2"> deleted.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;no post directory specified&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">exit&lt;/span> &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">shift&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> *&lt;span class="o">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">;;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="file-header-usrbinenv-bash">file header &lt;code>#!/usr/bin/env bash&lt;/code>
+&lt;/h3>&lt;p>The script starts with a shebang line &lt;code>#!/usr/bin/env bash&lt;/code> that specifies the interpreter to use for executing the script. This line is essential for running the script as an executable file. (happy running in zsh)&lt;/p>
+&lt;h3 id="understanding-while-test---gt-0">Understanding &lt;code>while test $# -gt 0;&lt;/code>
+&lt;/h3>&lt;p>The script begins with a &lt;code>while&lt;/code> loop that continues as long as there are arguments passed to the script (&lt;code>$#&lt;/code> is greater than 0). &lt;code>$#&lt;/code> is a special parameter in shell scripts that represents the number of arguments passed to the script. This loop allows the script to process multiple arguments sequentially, making it versatile and robust for different use cases.&lt;/p>
+&lt;h3 id="shift-and-argument-processing">&lt;code>shift&lt;/code> and Argument Processing
+&lt;/h3>&lt;p>Within the loop, we use the &lt;code>shift&lt;/code> command to shift the arguments passed to the script. This command moves the positional parameters (&lt;code>$1&lt;/code>, &lt;code>$2&lt;/code>, etc.) to the left, effectively removing the first argument. This is crucial for processing different flags and arguments in the script.&lt;/p>
+&lt;h3 id="how-case-works">How &lt;code>case&lt;/code> Works
+&lt;/h3>&lt;p>Inside the &lt;code>while&lt;/code> loop, we encounter a &lt;code>case&lt;/code> statement. This statement is used for pattern matching. It takes the first argument passed to the script (&lt;code>$1&lt;/code>), compares it against several patterns (&lt;code>-h&lt;/code>, &lt;code>--help&lt;/code>, &lt;code>-c&lt;/code>, &lt;code>--create&lt;/code>, &lt;code>-d&lt;/code>, &lt;code>--delete&lt;/code>), and executes the corresponding block of code based on the match.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Help (&lt;code>-h&lt;/code>, &lt;code>--help&lt;/code>)&lt;/strong>: Displays usage information and exits. This is crucial for any script, providing users with guidance on how to use the tool.&lt;/li>
+&lt;li>&lt;strong>Create (&lt;code>-c&lt;/code>, &lt;code>--create&lt;/code>)&lt;/strong>: Shifts to the next argument (the title of the post) and uses Hugo&amp;rsquo;s &lt;code>new&lt;/code> command to create a new post. If no title is provided, it exits with an error.&lt;/li>
+&lt;li>&lt;strong>Delete (&lt;code>-d&lt;/code>, &lt;code>--delete&lt;/code>)&lt;/strong>: Similar to create, but instead deletes the specified post directory using &lt;code>rm -r&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="the-conditional-if---n-1--then">The Conditional &lt;code>if [[ -n $1 ]]; then&lt;/code>
+&lt;/h3>&lt;p>Within both the create and delete blocks, there&amp;rsquo;s a conditional statement &lt;code>if [[ -n $1 ]]; then&lt;/code> that checks if the first argument (after shifting, which would be the title of the post or the post directory) is non-empty. &lt;code>-n $1&lt;/code> returns true if &lt;code>$1&lt;/code> has a non-zero length. This check ensures that the script doesn&amp;rsquo;t attempt to create or delete a post without a specified title or directory, which could lead to errors or unintended behavior.&lt;/p></description></item><item><title>Create Custom Frontmatter File in Hugo</title><link>https://light.ryankert.cc/p/create-custom-frontmatter-file-in-hugo/</link><pubDate>Wed, 27 Mar 2024 11:42:24 +0800</pubDate><guid>https://light.ryankert.cc/p/create-custom-frontmatter-file-in-hugo/</guid><description>&lt;h2 id="intro">Intro
+&lt;/h2>&lt;p>Frontmatter in Hugo is a block of YAML, TOML, or JSON at the beginning of a content file that contains metadata about the content. By default, Hugo provides a default frontmatter template for new content files. However, you can create a custom frontmatter file in Hugo by defining a custom archetype file.&lt;/p>
+&lt;p>In this tutorial, you will learn how to create a custom frontmatter file in Hugo.&lt;/p>
+&lt;h2 id="method">Method
+&lt;/h2>&lt;ol>
+&lt;li>Create a new archetype file &lt;code>./archetypes/default.md&lt;/code> in your Hugo project.&lt;/li>
+&lt;li>Define the custom frontmatter template in the archetype file.&lt;/li>
+&lt;/ol>
+&lt;h2 id="example">Example
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;{{ replace .Name &amp;#34;&lt;/span>-&lt;span class="s2">&amp;#34; &amp;#34;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34; | title }}&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">date&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>{{&lt;span class="w"> &lt;/span>&lt;span class="l">.Date }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">hidden&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">comments&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Setup Github and get your commit signed With Git and Github CLI</title><link>https://light.ryankert.cc/p/setup-github-and-get-your-commit-signed-with-git-and-github-cli/</link><pubDate>Wed, 13 Mar 2024 12:01:11 +0800</pubDate><guid>https://light.ryankert.cc/p/setup-github-and-get-your-commit-signed-with-git-and-github-cli/</guid><description>&lt;img src="https://light.ryankert.cc/p/setup-github-and-get-your-commit-signed-with-git-and-github-cli/image.png" alt="Featured image of post Setup Github and get your commit signed With Git and Github CLI" />&lt;h2 id="intro">Intro
+&lt;/h2>&lt;p>One of the easiest way to connect your Github account with your git installed on Mac or Windows is through &lt;a class="link" href="https://desktop.github.com/" target="_blank" rel="noopener"
+>Github Desktop&lt;/a>. But, we can&amp;rsquo;t use that on wsl, so we use PAT(personal access token) to resolve this issue!&lt;/p>
+&lt;h2 id="steps-to-setup-on-windows-11">Steps to setup on Windows 11
+&lt;/h2>&lt;ol>
+&lt;li>install &lt;a class="link" href="https://git-scm.com/downloads" target="_blank" rel="noopener"
+>git&lt;/a> on Windows&lt;/li>
+&lt;li>install &lt;a class="link" href="https://desktop.github.com/" target="_blank" rel="noopener"
+>Github Desktop&lt;/a>&lt;/li>
+&lt;li>Login your &lt;a class="link" href="https://desktop.github.com/" target="_blank" rel="noopener"
+>Github Desktop&lt;/a> with your Github account&lt;/li>
+&lt;/ol>
+&lt;h2 id="install-git-on-macwsl-2-linux">install git on Mac/WSL 2/ Linux
+&lt;/h2>&lt;ol>
+&lt;li>Install git(if not already installed)
+&lt;ul>
+&lt;li>Mac: &lt;code>brew install git&lt;/code>&lt;/li>
+&lt;li>Linux/WSL2(debian): &lt;code>sudo apt-get install git&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>check git version with&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git --version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>setup git global config&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git config --global user.email &lt;span class="s2">&amp;#34;you@example.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.name &lt;span class="s2">&amp;#34;Your Name&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="install-github-cli">install Github CLI
+&lt;/h2>&lt;ol>
+&lt;li>
+&lt;p>download and install Github CLI following &lt;a class="link" href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git#github-cli" target="_blank" rel="noopener"
+>this tutorial&lt;/a>. In Ubuntu, you can install it with &lt;a class="link" href="https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-raspberry-pi-os-apt" target="_blank" rel="noopener"
+>apt&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>login in the Github website&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">gh auth login
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>test: clone, commit and try to push a github repo&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git clone &amp;lt;repo url&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add *
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -am &lt;span class="s2">&amp;#34;commit name&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>output example:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ git add *
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git commit -am &amp;#34;init&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[master 563c3a8] init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 file changed, 3 insertions(+), 16 deletions(-)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ git push
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Enumerating objects: 11, done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Counting objects: 100% (11/11), done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Delta compression using up to 20 threads
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Compressing objects: 100% (6/6), done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing objects: 100% (6/6), 608 bytes | 101.00 KiB/s, done.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total 6 (delta 5), reused 0 (delta 0), pack-reused 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">To https://github.com/ryankert01/blog.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> af6a1b1..563c3a8 master -&amp;gt; master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="sign-your-commit-with-gpg-key">Sign your commit with GPG key
+&lt;/h2>&lt;p>&lt;img src="https://light.ryankert.cc/p/setup-github-and-get-your-commit-signed-with-git-and-github-cli/image-1.png"
+width="418"
+height="156"
+srcset="https://light.ryankert.cc/p/setup-github-and-get-your-commit-signed-with-git-and-github-cli/image-1_hu_27a34161a2711ba.png 480w, https://light.ryankert.cc/p/setup-github-and-get-your-commit-signed-with-git-and-github-cli/image-1_hu_4169d3fbaef1c881.png 1024w"
+loading="lazy"
+alt="github verified tag"
+class="gallery-image"
+data-flex-grow="267"
+data-flex-basis="643px"
+>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Generate a GPG Key:&lt;/strong>&lt;/p>
+&lt;p>Open a terminal and generate a new GPG key pair:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">gpg --full-generate-key
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Follow the prompts to create your key. Choose the following options when prompted:&lt;/p>
+&lt;ul>
+&lt;li>Select kind of key: &lt;code>(1) RSA and RSA (default)&lt;/code>&lt;/li>
+&lt;li>Key size: &lt;code>4096&lt;/code>&lt;/li>
+&lt;li>Key expiration: &lt;code>0&lt;/code> (never expires)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>List Your GPG Keys:&lt;/strong>&lt;/p>
+&lt;p>After generating your key, you can list your keys to get the key ID:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">gpg --list-secret-keys --keyid-format LONG
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Look for the &lt;code>sec&lt;/code> section and you can get the &lt;code>long key ID&lt;/code> at the second line.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Copy Your GPG Key:&lt;/strong>&lt;/p>
+&lt;p>Use the &lt;code>long key ID&lt;/code> to copy your GPG key:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">gpg --armor --export &amp;lt;your-long-key-id&amp;gt; &amp;gt; my-gpg-key.asc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>add GPG key to Github account&lt;/strong>&lt;/p>
+&lt;p>Use the File Path with GitHub CLI:&lt;/p>
+&lt;p>Now, you can use the file path with GitHub CLI:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">gh gpg-key add my-gpg-key.asc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Yes, you can use GitHub CLI (gh) to simplify the process of adding your GPG key to GitHub. Here are the steps to do so:&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Configure Git to Sign Your Commits:&lt;/strong>&lt;/p>
+&lt;p>Configure Git to use your GPG key for signing commits:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config --global user.signingkey &amp;lt;your-long-key-id&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global commit.gpgSign &lt;span class="nb">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Make and Sign a Commit:&lt;/strong>&lt;/p>
+&lt;p>Make a new commit and push it to GitHub. The commit should be signed automatically if you enabled commit signing by default:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git commit -m &lt;span class="s2">&amp;#34;Your commit message&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>To manually sign a commit, use the &lt;code>-S&lt;/code> flag:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git commit -S -m &lt;span class="s2">&amp;#34;Your commit message&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;p>These steps leverage GitHub CLI to streamline the process of adding your GPG key to GitHub and configuring Git to sign your commits.&lt;/p>
+&lt;h2 id="reference">Reference
+&lt;/h2>&lt;p>&lt;a class="link" href="https://hackmd.io/@kolyasapphire/H1ESwImjY" target="_blank" rel="noopener"
+>Git GPG Setup for macOS&lt;/a>&lt;/p></description></item><item><title>Generative Ai on Writing Presentation Notes Essays</title><link>https://light.ryankert.cc/p/generative-ai-on-writing-presentation-notes-essays/</link><pubDate>Sat, 09 Mar 2024 00:23:55 +0800</pubDate><guid>https://light.ryankert.cc/p/generative-ai-on-writing-presentation-notes-essays/</guid><description>&lt;h2 id="prompt-for-generative-ai-model-1">Prompt for generative AI model 1
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">你是一名資工系的學生，而你剛聽完一場演講，需要寫一份觀後心得。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">觀後心得的內容需要包含以下幾個部分：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">1.&lt;/span> 演講內容筆記
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">2.&lt;/span> 對於演講內容的看法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">3.&lt;/span> 關於演講內容的延伸想法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 以下是關於這場演講的大鋼，請根據大綱，使用繁體中文撰寫觀後心得，內容至少需要 700 字。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">演講主題：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">簡介：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[大綱]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="prompt-for-generative-ai-model-2">Prompt for generative AI model 2
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-md" data-lang="md">&lt;span class="line">&lt;span class="cl">請將下列文章改寫成比較不像生成式 ai 生成的文句，加入更多生活中常用單字，更加口語，必須是段落式，不能進行列點：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[result from generative ai model 1]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="post-processing">post processing
+&lt;/h2>&lt;p>將演講者改成老師。&lt;/p></description></item><item><title>Archives</title><link>https://light.ryankert.cc/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/archives/</guid><description/></item><item><title>Friends' Posts</title><link>https://light.ryankert.cc/friend-posts/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/friend-posts/</guid><description>&lt;div class="posts_friends" markdown="1">&lt;/div>
+&lt;script>
+function createElementcc(elementType, style, link, innerhtml) {
+let elementCreated = document.createElement(elementType);
+if(link)elementCreated.href = link;
+elementCreated.innerHTML = innerhtml;
+if(style)elementCreated.style = style;
+return elementCreated;
+}
+console.log("hello");
+var p_f = document.querySelector('.posts_friends');
+const request = 'https://ryankert01.github.io/rss-friend/sorted.json';
+let d = new Date();
+fetch(request)
+.then(response => response.json())
+.then(json => {
+for(let i = 0; i &lt; json.length; i++) {
+console.log(i);
+console.log(json[i].title);
+let currentItem = document.createElement('div');
+d = new Date(json[i].date);
+let e;
+let monthAppend = d.getMonth()+1;
+monthAppend = monthAppend.toString();
+monthAppend = monthAppend.length &lt; 2 ? "0" + monthAppend : monthAppend;
+let dayAppend = d.getDate();
+dayAppend = dayAppend.toString();
+dayAppend = dayAppend.length &lt; 2 ? "0" + dayAppend : dayAppend;
+let tempAppend = monthAppend + "-" + dayAppend + " ";
+console.log(json[i].title);
+let margin = 10;
+let style = "border-bottom: none; opacity: 65%; margin: ";
+style += margin.toString() + "px";
+e = createElementcc(
+'b',
+style,
+null,
+tempAppend
+);
+console.log(e)
+currentItem.appendChild(e);
+e = createElementcc('a', null, json[i].link, json[i].title);
+e.target = "_blank";
+e.rel = "noopener noreferrer";
+currentItem.appendChild(e);
+console.log(e)
+e = createElementcc('a', "opacity: 75%;", json[i].author.link, json[i].author.name);
+e.classList.add('link');
+e.target = "_blank";
+e.rel = "noopener noreferrer";
+e.classList.add("e-author");
+currentItem.appendChild(e);
+console.log(e)
+p_f.appendChild(currentItem);
+console.log(currentItem);
+}
+})
+console.log(request)
+console.log("hello");
+&lt;/script>
+&lt;style>
+.e-author {
+position: absolute;
+right: 15%;
+}
+@media screen and (max-width: 950px) {
+.e-author {
+position: relative;
+left: 15px
+}
+}
+&lt;/style>
+&lt;p>for how to build one, check out this &lt;a class="link" href="" >post&lt;/a>.&lt;br>
+powered by &lt;a class="link" href="https://github.com/ryankert01/rss-friend" target="_blank" rel="noopener"
+>rss-friend&lt;/a> with ❤️&lt;/p></description></item><item><title>Search</title><link>https://light.ryankert.cc/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://light.ryankert.cc/search/</guid><description/></item></channel></rss>

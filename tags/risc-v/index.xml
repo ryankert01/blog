@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RISC-V on Ryan Kert</title><link>https://light.ryankert.cc/tags/risc-v/</link><description>Recent content in RISC-V on Ryan Kert</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Mar 2024 17:56:44 +0800</lastBuildDate><atom:link href="https://light.ryankert.cc/tags/risc-v/index.xml" rel="self" type="application/rss+xml"/><item><title>RISC-V: Use Stack to Store Return Address</title><link>https://light.ryankert.cc/p/risc-v-use-stack-to-store-return-address/</link><pubDate>Wed, 27 Mar 2024 17:56:44 +0800</pubDate><guid>https://light.ryankert.cc/p/risc-v-use-stack-to-store-return-address/</guid><description>&lt;h2 id="intro">Intro
+&lt;/h2>&lt;p>In RISC-V, the return address is stored in the &lt;code>ra&lt;/code> register. However, in some cases, you may want to use the stack to store the return address. This can be useful when you need to save the return address before calling a function and restore it after the function returns.&lt;/p>
+&lt;h2 id="best-practice">Best Practice
+&lt;/h2>&lt;p>To use the stack to store the return address in RISC-V, you can follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Push the return address onto the stack before calling the function.&lt;/li>
+&lt;li>Call the function.&lt;/li>
+&lt;li>Pop the return address from the stack after the function returns.&lt;/li>
+&lt;/ol>
+&lt;p>Here is an example of how to use the stack to store the return address in RISC-V:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">.section .text
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.global _start
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">_start:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Push the return address onto the stack
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addi sp, sp, -4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sw ra, 0(sp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Call the function
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> jal function
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Pop the return address from the stack
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> lw ra, 0(sp)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addi sp, sp, 4
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Exit the program
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> li a7, 93
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> li a0, 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ecall
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Function body
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ret
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
